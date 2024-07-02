@@ -1,0 +1,93 @@
+body{
+    background-color: black;
+
+    margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        background: rgb(0, 20, 56);
+        box-shadow: 0 -200px 100px -120px rgb(0, 11, 46) inset;
+        animation: background 10s infinite alternate;      
+        color: #ffffff;
+}
+@keyframes background {
+    50% {
+      background: rgb(0, 0, 0);
+      box-shadow: 0 -200px 100px -100px rgb(0, 14, 95) inset;
+    }
+  }
+  
+section{
+min-height: 500px;
+padding: 0% 5%;
+}
+    h1{
+        color: rgb(255, 255, 0);
+    margin: 0;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 64px;
+}
+h3{
+    padding: 25px;
+    text-align: center;
+    font-size: 36pt;
+}
+
+.example_price{
+    color: yellow;
+}
+
+.gradient-all {
+    padding: auto;
+    margin: auto;
+    font-size: 2em;
+ -webkit-text-fill-color: white;
+    display: inline-block;
+
+    width: 100%;
+      }
+
+     
+
+      /* Кнопки */
+.btn{ 
+    color: #1351d6;
+    font-size: 18pt;
+    font-weight: 900;
+    line-height: 50px;
+}
+
+footer{
+    height: 250px;
+}
+.btn_totop{
+    position: fixed;
+    bottom: 15px;
+    z-index: 1;
+    right: 15px;
+    border-radius: 180px;
+    color: #ffffff;
+}
+.carousel-inner img{
+
+    height: 650px;
+    width: 120%;
+    
+}
+.buy_btn{
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    color: #ff0000;
+    border: 2px #002fff;
+    
+}
+.aside_note_breeds_picture{
+height: 300px;
+}
+
+.carousel-indicators{
+    margin-left: 20%;
+}
