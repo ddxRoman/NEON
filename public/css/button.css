@@ -35,6 +35,8 @@ width: 100%;
 }
 
 nav{
+  margin-left: 50px;
+  width: 50px;
 line-height: normal;
 margin-top: 75px;
   justify-content: stretch;
@@ -82,7 +84,7 @@ padding: auto;
 }
 
 .glowing-txt {
-  float: left;
+  float: center;
   margin-right: -0.8em;
   -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
     0 0 0.45em var(--glow-color);
@@ -98,6 +100,7 @@ padding: auto;
 }
 
 .glowing-btn::before {
+
   content: "";
   position: absolute;
   top: 0;
@@ -262,36 +265,37 @@ padding: auto;
   font-size: 18pt;
   font-weight: 900;
   line-height: 50px;
-  border: 1px solid #354385;
+  border: 2px solid #354385;
   animation: neon 1.5s ease infinite;
   margin: 0 35px;
+  opacity: 0.8;
 }
 .btn:hover{ 
   color: #1897ff;
   font-size: 18pt;
   font-weight: 900;
   line-height: 50px;
-  border: 1px solid #0077ff;
+  border: 2px solid #00d9ff;
   animation: neonhover 0.2s ease ;
-  box-shadow: 0px 0px 20px 12px rgba(0, 145, 255, 0.822);
+  box-shadow: 0px 0px 20px 5px rgba(0, 145, 255, 0.822);
   text-shadow: 0px 0px 11px rgba(0,47,255,0.73);
 }
 
 @keyframes neon{
   0%{
-      border-color: #002fffd3;
+    border-color: #002fff3d;
   }
   15%{
-      border-color: #002fff3d;
+    border-color: #002fffd3;
   }
   25%{
-      border-color: #002fff71;
+    border-color: #002fff50;
   }
   40%{
-      border-color: #2b3c88c5;
+    border-color: #1a39c0c5;
   }
   60%{
-      border-color: #002fff71;
+    border-color: #002fff71;
   }
   80%{
       border-color: #2c3b7e8a;
@@ -340,12 +344,21 @@ padding: auto;
   z-index: 1;
   right: 15px;
 }
-.btn-start, .btn-end{
+.btn-one{
 
-  animation: neonSide 2s ease infinite;
+  animation: neon1 4.5s ease infinite;
+}
+.btn-four{
+
+  animation: neon2 2s ease infinite;
+}
+.btn-three{
+
+  animation: neon3 4.5s ease infinite;
 }
 
-@keyframes neonSide{
+
+@keyframes neon1{
   0%{
     border-color: #002fff3d;
   }
@@ -363,6 +376,48 @@ padding: auto;
   }
   80%{
     border-color: #2b3c88c5;
+  }
+  
+}
+@keyframes neon2{
+  0%{
+    border-color: #002fff71;
+  }
+  15%{
+    border-color: #002fff3d;
+  }
+  25%{
+    border-color: #002fff71;
+  }
+  40%{
+    border-color: #2b3c88c5;
+  }
+  60%{
+    border-color: #2c3b7e8a;
+  }
+  80%{
+    border-color: #002fffd3;
+  }
+  
+}
+@keyframes neon3{
+  0%{
+    border-color: #002fff3d;
+  }
+  15%{
+    border-color: #002fffd3;
+  }
+  25%{
+    border-color: #002fff71;
+  }
+  40%{
+    border-color: #2b3c88c5;
+  }
+  60%{
+    border-color: #2c3b7e8a;
+  }
+  80%{
+    border-color: #002fff71;
   }
   
 }

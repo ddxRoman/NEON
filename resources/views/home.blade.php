@@ -25,12 +25,13 @@
 
 <body>
     <header>
-        <div class="comtainer-fluid">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-4">
                 <h1><a href="top"></a> NEON DON</h1>
+                <h1 class="blink"> NEON DON</h1>
                 </div>
-                <div class="col-4 social">
+                <div class="col-6 social">
                 
                 <a href="">
                     <img src="{{asset('images/icon/vk.svg')}}" alt="">
@@ -40,8 +41,15 @@
                     <img src="{{asset('images/icon/telegram.svg')}}" alt="">
                 </a>
                 </div>
-                <div class="col-4 telephone">
-                <span>+7(949)-555-55-55</span>
+                <div class="col-2 telephone">
+                
+
+                <a href="tel:+79495555555">
+                    <img src="{{asset('images/icon/call.svg')}}" alt="">    
+                    <span class="telnumber">   +7(949)-555-55-55</span>
+                </a>
+                <span>
+
                 </div>
             </div>
         </div>
@@ -54,16 +62,16 @@
         <nav class="header-nav__menu col-lg-12 col-md-4 text-center">
             <ul class="navbar_li">
                 <a href="#example">
-                    <li class="btn btn-start">Наши работы</li>
+                    <li class="btn btn-one">Наши работы</li>
                 </a>
                 <a href="#price">
-                    <li class="btn ">Цены</li>
+                    <li class="btn btn-two ">Цены</li>
                 </a>
                 <a href="#about">
-                    <li class="btn">Кто мы</li>
+                    <li class="btn btn-three">Кто мы</li>
                 </a>
                 <a href="#production">
-                    <li class="btn btn-end">Производство</li>
+                    <li class="btn btn-four">Производство</li>
                 </a>
             </ul>
         </nav>
@@ -76,7 +84,7 @@
         <section class="section_examples">
             <h3><a name="example">Примеры работ</a>
             </h3>
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide section_examples_carousel" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -114,17 +122,16 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-
-            <button class='glowing-btn'><span class='glowing-txt'>ЗА<span class='faulty-letter'>КА</span>ЗАТЬ</span></button>
+<div class="row">
+    <button class='glowing-btn'><span class='glowing-txt'>ЗА<span class='faulty-letter'>КА</span>ЗАТЬ</span></button>
+</div>
 
 
 
         </section>
-        <section>
+        <section class="section_price">
             <div class="container">
                 <div class="row">
-
-
                     <h3>
                         <a name="price">Цены</a>
                     </h3>
@@ -149,49 +156,49 @@
                                 <div class="carousel-item active">
                                 <figure>
                                 <img class="aside_note_breeds_picture" width="100%" src="{{asset('images/examples/Love.jpg')}}">
-                                <figcaption class="example_price">Цена</figcaption>
+                                <figcaption class="example_price">Цена1</figcaption>
                             </figure>
                                 </div>
                                 <div class="carousel-item">
                                     <figure>
                                         <img class="aside_note_breeds_picture" width="100%" src="{{asset('images/examples/Nike.png')}}">
-                                        <figcaption class="example_price">Цена</figcaption>
+                                        <figcaption class="example_price">Цена2</figcaption>
                                     </figure>
                                 </div>
                                 <div class="carousel-item">
                                 <figure>
                                 <img class="aside_note_breeds_picture" width="100%" src="{{asset('images/examples/Wow.jpg')}}">
-                                <figcaption class="example_price">Цена</figcaption>
+                                <figcaption class="example_price">Цена3</figcaption>
                             </figure>
                                 </div>
                                 <div class="carousel-item">
                                 <figure>
                                 <img class="aside_note_breeds_picture" width="100%" src="{{asset('images/examples/purple.jpg')}}">
-                                <figcaption class="example_price">Цена</figcaption>
+                                <figcaption class="example_price">Цена4</figcaption>
                             </figure>
                                 </div>
                                 <div class="carousel-item">
                                 <figure>
                                 <img class="aside_note_breeds_picture" width="100%" src="{{asset('images/examples/beer.png')}}">
-                                <figcaption class="example_price">Цена</figcaption>
+                                <figcaption class="example_price">Цена5</figcaption>
                             </figure>
                                 </div>
                                 <div class="carousel-item">
                                 <figure>
                                 <img class="aside_note_breeds_picture" width="100%" src="{{asset('images/examples/beer2.png')}}">
-                                <figcaption class="example_price">Цена</figcaption>
+                                <figcaption class="example_price">Цена6</figcaption>
                             </figure>
                                 </div>
                                 <div class="carousel-item">
                                 <figure>
                                 <img class="aside_note_breeds_picture" width="100%" src="{{asset('images/examples/like.png')}}">
-                                <figcaption class="example_price">Цена</figcaption>
+                                <figcaption class="example_price">Цена7</figcaption>
                             </figure>
                                 </div>
                                 <div class="carousel-item">
                                 <figure>
                                 <img class="aside_note_breeds_picture" width="100%" src="{{asset('images/examples/lash.png')}}">
-                                <figcaption class="example_price">Цена</figcaption>
+                                <figcaption class="example_price">Цена8</figcaption>
                             </figure>
                                 </div>
 

@@ -25,44 +25,26 @@
     <!-- <link rel="stylesheet" href="{{ asset('css/button.css') }}"> -->
 </head>
 <style>
+.myAnimations {
+    animation-name: bounce, flash, pulse;
+    -webkit-animation-name: bounce, flash, pulse;
 
-.navbtn
-{
-  width: 150px;
-  height: 50px;
-  background-color: #fff;
-  animation: btnan 1s ease-in-out infinite;
+
+
+    /*
+    you can set different proporties to different animations too:
+    1s to bounce
+    2s to flash
+    3s to pulse
+    */
+
+    animation-duration: 1s, 2s, 3s;
+    -webkit-animation-duration: 1s, 2s, 3s;
 }
-@keyframes btnan{
-  0%{
-    border-color: #1ff;
-  }
-  50%{
-    border-color: #1f1;
-  }
-  100%{
-    border-color: #11f;
-  }
-
-}
-
-
 </style>
 
 <body>
-<button class="navbtn">
-  Lorem
-</button>
-<button class="navbtn">
-  Lorem
-</button>
-<button class="navbtn">
-  Lorem
-</button>
-<button class="navbtn">
-  Lorem
-</button>
-
+<div class="animated myAnimations">gfdgretreter</div>
 </body>
 
 </html>
