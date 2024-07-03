@@ -1,5 +1,10 @@
 a{
   text-decoration: none;
+  
+}
+a:hover{
+  text-decoration: none;
+
 }
 
 .btn_totop{
@@ -31,8 +36,7 @@ width: 100%;
 
 nav{
 line-height: normal;
-  margin: 0;
-  padding: 0;
+margin-top: 75px;
   justify-content: stretch;
 }
 .header__navBar__item li {
@@ -250,13 +254,17 @@ padding: auto;
   }
 }
 
+
+
 .btn{ 
+  text-transform: uppercase;
   color: #2e4b8a;
   font-size: 18pt;
   font-weight: 900;
   line-height: 50px;
   border: 1px solid #354385;
   animation: neon 1.5s ease infinite;
+  margin: 0 35px;
 }
 .btn:hover{ 
   color: #1897ff;
@@ -265,8 +273,8 @@ padding: auto;
   line-height: 50px;
   border: 1px solid #0077ff;
   animation: neonhover 0.2s ease ;
-  box-shadow: 0px 0px 40px 22px rgba(0, 145, 255, 0.822);
-  text-shadow: 0px 0px 40px 22px rgba(0, 145, 255, 0.904);
+  box-shadow: 0px 0px 20px 12px rgba(0, 145, 255, 0.822);
+  text-shadow: 0px 0px 11px rgba(0,47,255,0.73);
 }
 
 @keyframes neon{
@@ -313,7 +321,9 @@ padding: auto;
   }
   75%{
       border-color: #002fff71;
+      
   }
+  
   
 
 }
@@ -329,5 +339,30 @@ padding: auto;
   bottom: 15px;
   z-index: 1;
   right: 15px;
+}
+.btn-start, .btn-end{
 
+  animation: neonSide 2s ease infinite;
+}
+
+@keyframes neonSide{
+  0%{
+    border-color: #002fff3d;
+  }
+  15%{
+    border-color: #002fff71;
+  }
+  25%{
+    border-color: #002fffd3;
+  }
+  40%{
+    border-color: #002fff71;
+  }
+  60%{
+    border-color: #2c3b7e8a;
+  }
+  80%{
+    border-color: #2b3c88c5;
+  }
+  
 }

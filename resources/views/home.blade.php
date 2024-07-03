@@ -25,7 +25,8 @@
 
 <body>
     <header>
-        <h1><a href="top"></a> NEON</h1>
+        <h1><a href="top"></a> NEON DON</h1>
+        <span>gfdkjhkrejtbvdbgrfty</span>
         <a class="btn_totop" href="#top"><img src="{{asset('images/arrow-up.svg')}}"></a>
         <nav class="header-nav__menu col-lg-12 col-md-4 text-center">
             <ul class="navbar_li">
@@ -33,13 +34,13 @@
                     <li class="btn btn-start">Наши работы</li>
                 </a>
                 <a href="#price">
-                    <li class="btn">Цены</li>
+                    <li class="btn ">Цены</li>
                 </a>
                 <a href="#about">
                     <li class="btn">Кто мы</li>
                 </a>
                 <a href="#production">
-                    <li class="btn">Производство</li>
+                    <li class="btn btn-end">Производство</li>
                 </a>
             </ul>
         </nav>
@@ -90,7 +91,7 @@
                 </button>
             </div>
 
-            <button class='glowing-btn'><span class='glowing-txt'>C<span class='faulty-letter'>L</span>ICK</span></button>
+            <button class='glowing-btn'><span class='glowing-txt'>ЗА<span class='faulty-letter'>КА</span>ЗАТЬ</span></button>
 
 
 
