@@ -1,0 +1,54 @@
+a{
+  text-decoration: none;
+}
+
+.btn_totop{
+  position: fixed;
+  bottom: 15px;
+  z-index: 1;
+  right: 15px;
+  border-radius: 180px;
+  color: #ffffff;
+}
+
+/* Кнопки */
+.header__navBar__item li {
+  padding: auto;
+  margin: auto;
+  justify-content: center;
+}
+.header__navBar__item li {
+  justify-content: stretch;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-top: auto;
+}
+
+.container_header{
+
+width: 100%;
+}
+
+nav{
+line-height: normal;
+  margin: 0;
+  padding: 0;
+  justify-content: stretch;
+}
+.header__navBar__item li {
+  width: 19%;
+  justify-content: stretch;
+  display: inline-block;
+  text-transform: uppercase;
+padding-right: 2%;
+padding-left: 2%;
+  margin-top: auto;
+  align-items: center;
+padding: auto;
+
+  border: 1px solid #94e6ff;
+
+}
+.header__navBar__item{
+  justify-content: center;
+}
