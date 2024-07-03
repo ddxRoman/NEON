@@ -25,8 +25,31 @@
 
 <body>
     <header>
-        <h1><a href="top"></a> NEON DON</h1>
-        <span>gfdkjhkrejtbvdbgrfty</span>
+        <div class="comtainer-fluid">
+            <div class="row">
+                <div class="col-4">
+                <h1><a href="top"></a> NEON DON</h1>
+                </div>
+                <div class="col-4 social">
+                
+                <a href="">
+                    <img src="{{asset('images/icon/vk.svg')}}" alt="">
+                </a><a href="">
+                    <img src="{{asset('images/icon/instagram.svg')}}" alt="">
+                </a><a href="https://t.me/neondn">
+                    <img src="{{asset('images/icon/telegram.svg')}}" alt="">
+                </a>
+                </div>
+                <div class="col-4 telephone">
+                <span>+7(949)-555-55-55</span>
+                </div>
+            </div>
+        </div>
+       
+    <div class="row">
+        <div class="col-12">
+
+
         <a class="btn_totop" href="#top"><img src="{{asset('images/arrow-up.svg')}}"></a>
         <nav class="header-nav__menu col-lg-12 col-md-4 text-center">
             <ul class="navbar_li">
@@ -44,7 +67,8 @@
                 </a>
             </ul>
         </nav>
-
+        </div>
+    </div>
     </header>
     <main>
 
