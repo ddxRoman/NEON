@@ -90,6 +90,7 @@ padding: auto;
   --glow-color: hsl(186 100% 69%);
 }
 .glowing-btn {
+  width: 100%;
   position: relative;
   color: var(--glow-color);
   cursor: pointer;
@@ -286,15 +287,21 @@ padding: auto;
   }
 }
 
-
+dl, ol, ul {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
 
 .btn{ 
+  min-width: 210px;
+
   text-transform: uppercase;
   color: #2e4b8a;
   font-size: 18pt;
   font-weight: 900;
   line-height: 50px;
   border: 2px solid #354385;
+  border-radius: 5px;
   animation: neon 1.5s ease infinite;
   margin: 0 35px;
   opacity: 0.8;

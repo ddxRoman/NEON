@@ -17,7 +17,7 @@ body{
   
 section{
 min-height: 500px;
-padding: 0% 5%;
+padding: 0% 10%;
 }
     h1{
         opacity: 0;
@@ -111,6 +111,8 @@ opacity: 0.1;
 h3{
     text-align: center;
     font-size: 36pt;
+    margin-bottom: 6rem;
+    margin-top: 8rem;
 }
 
 .example_price{
@@ -144,7 +146,7 @@ h3{
 
 .social{
 /* padding-top: 50px; */
-padding-left: 200px;
+padding-left: 160px;
 padding-right: 200px;
 justify-self: center;
 align-self: center;
