@@ -73,6 +73,9 @@
                 <a href="#production">
                     <li class="btn btn-four">Производство</li>
                 </a>
+                <a href="#order">
+                    <li class="btn btn-four">Заказать</li>
+                </a>
             </ul>
         </nav>
         </div>
@@ -82,7 +85,7 @@
 
     <!-- Карусель должна генерится цыклом из базы -->
         <section class="section_examples">
-            <h3><a name="example">Примеры работ</a>
+            <h3><a href="#example" name="example">Примеры работ</a>
             </h3>
             <div id="carouselExampleCaptions" class="carousel slide section_examples_carousel" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -133,7 +136,7 @@
             <div class="container">
                 <div class="row">
                     <h3>
-                        <a name="price">Цены</a>
+                        <a href="#price" name="price">Цены</a>
                     </h3>
                     <div class="col-6">
                         <ul>
@@ -212,32 +215,34 @@
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-
-
-
-
-
                     </div>
-
-
-
-
                     <br>
                 </div>
             </div>
         </section>
         <section>
             <h3>
-                <a name="about">Кто мы</a>
-
+            <a href="#about"   
+             name="about">Кто мы</a> 
             </h3>
             <br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nulla dolor itaque nam rerum error corrupti ipsam sed sint nesciunt quibusdam fuga excepturi minus, aliquam, dolorem perspiciatis. Adipisci mollitia aspernatur consequatur reprehenderit animi sequi ducimus dolorum nulla molestias corrupti deserunt facere praesentium et earum soluta sapiente, ullam eius error. Rerum ex tempora aliquam. Ex similique minima fuga qui? Minima quis provident eum animi vel, suscipit neque perspiciatis. Corrupti accusamus blanditiis quaerat facilis repudiandae porro vitae, neque rerum eum, corporis adipisci atque, dolorem quas delectus. Harum eum natus qui neque error doloremque aspernatur consequatur nesciunt, id tenetur alias nam at voluptatem consectetur minima similique. Quasi explicabo voluptate eum harum veniam tempora dignissimos, ex maxime similique possimus, voluptates corporis, nihil dolorum fugit. Autem ut vero laboriosam odit, deleniti nemo obcaecati similique qui soluta facilis temporibus veniam voluptates consequatur doloremque non explicabo alias repudiandae iure molestias quas modi, sapiente vitae laborum. Vero molestias incidunt inventore illo nesciunt, animi sapiente in adipisci laboriosam amet magni delectus, ea libero atque quas voluptate repellendus sed? Vitae fuga culpa adipisci aliquid ad, libero nulla at, accusamus quis magni maiores repellat, aperiam quisquam numquam ducimus accusantium non iusto quod dignissimos consequatur cum itaque! Debitis culpa sit esse dolore quibusdam hic velit, quisquam quos dignissimos possimus vel doloremque ex maiores eveniet atque, consequuntur distinctio voluptas tenetur sequi asperiores recusandae laboriosam minus odio! Fugit, sunt eveniet quidem unde ipsa sequi doloribus possimus officia enim eum officiis blanditiis quas rerum iusto, nihil nemo exercitationem expedita maxime reiciendis impedit dolorem perferendis. Veritatis enim molestiae sapiente amet officia.
         </section>
         <section>
-            <h3> <a name="production">Этиапы изготовление вывесок</a></h3>
+            <h3> <a href="#production" name="production">Этапы изготовление вывесок</a></h3>
             <br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nulla dolor itaque nam rerum error corrupti ipsam sed sint nesciunt quibusdam fuga excepturi minus, aliquam, dolorem perspiciatis. Adipisci mollitia aspernatur consequatur reprehenderit animi sequi ducimus dolorum nulla molestias corrupti deserunt facere praesentium et earum soluta sapiente, ullam eius error. Rerum ex tempora aliquam. Ex similique minima fuga qui? Minima quis provident eum animi vel, suscipit neque perspiciatis. Corrupti accusamus blanditiis quaerat facilis repudiandae porro vitae, neque rerum eum, corporis adipisci atque, dolorem quas delectus. Harum eum natus qui neque error doloremque aspernatur consequatur nesciunt, id tenetur alias nam at voluptatem consectetur minima similique. Quasi explicabo voluptate eum harum veniam tempora dignissimos, ex maxime similique possimus, voluptates corporis, nihil dolorum fugit. Autem ut vero laboriosam odit, deleniti nemo obcaecati similique qui soluta facilis temporibus veniam voluptates consequatur doloremque non explicabo alias repudiandae iure molestias quas modi, sapiente vitae laborum. Vero molestias incidunt inventore illo nesciunt, animi sapiente in adipisci laboriosam amet magni delectus, ea libero atque quas voluptate repellendus sed? Vitae fuga culpa adipisci aliquid ad, libero nulla at, accusamus quis magni maiores repellat, aperiam quisquam numquam ducimus accusantium non iusto quod dignissimos consequatur cum itaque! Debitis culpa sit esse dolore quibusdam hic velit, quisquam quos dignissimos possimus vel doloremque ex maiores eveniet atque, consequuntur distinctio voluptas tenetur sequi asperiores recusandae laboriosam minus odio! Fugit, sunt eveniet quidem unde ipsa sequi doloribus possimus officia enim eum officiis blanditiis quas rerum iusto, nihil nemo exercitationem expedita maxime reiciendis impedit dolorem perferendis. Veritatis enim molestiae sapiente amet officia.
+        </section>
+        <section>
+            <h3> <a href="#order" name="order">Оформить заказ</a></h3>
+            <br>
+       
+            <form method="post" action="">
+                <input class="order_form_input" type="text" placeholder="вветиде данные" type="text"><br>
+                <input class="order_form_input" type="tel" placeholder="вветиде данные" type="text"><br>
+                <input class="order_form_input" placeholder="вветиде данные" type="text"><br>
+                <textarea class="order_form_input" placeholder="вветиде данные" type="text"> </textarea><br>
+            </form>
         </section>
     </main>
     <footer>

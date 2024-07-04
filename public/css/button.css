@@ -1,10 +1,39 @@
 a{
+  color: #00ffb3;
   text-decoration: none;
   
 }
 a:hover{
+  text-shadow: 11px 11px 20px  #00ffb3;;
   text-decoration: none;
+}
 
+a:visited{
+  outline-color:rgb(0, 255, 191);
+  color: #00ffb3;
+  text-decoration: none;
+}
+a:active{
+
+  text-shadow: 11px 11px 20px rgba(0, 255, 221, 0.51);
+  color: #00ffb36c;
+
+  text-decoration: none;
+}
+
+@keyframes activelink{
+  0%{
+    text-shadow: 11px 11px 20px rgba(255,0,0,0.51);
+  }
+  25%{
+      text-shadow: 11px 11px 20px rgba(182, 33, 33, 0.466);
+  }
+  50%{
+    text-shadow: 11px 11px 20px rgba(255,0,0,0.51);
+  }
+  75%{
+      text-shadow: 11px 11px 20px rgba(182, 33, 33, 0.918);
+  }
 }
 
 .btn_totop{
