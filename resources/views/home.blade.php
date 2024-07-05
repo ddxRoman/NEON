@@ -84,10 +84,10 @@
     </header>
     <main>
 
-    <!-- Карусель должна генерится цыклом из базы -->
+        <!-- Карусель должна генерится цыклом из базы -->
+        <section class="section_examples">
     <div class="container">
     <div class="row">
-        <section class="section_examples">
             <h3><a href="#example" name="example">Примеры работ</a>
             </h3>
             <div id="carouselExampleCaptions" class="carousel slide section_examples_carousel" data-bs-ride="carousel">
