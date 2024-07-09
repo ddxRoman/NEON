@@ -1,3 +1,6 @@
+a{
+  text-decoration: none;
+  }
 .heder-3_Link{
     color: #00ffb3;
     text-decoration: none;
@@ -297,7 +300,7 @@
   }
   
   .btn{ 
-    min-width: 210px;
+    min-width: 350px;
   
     text-transform: uppercase;
     color: #2e4b8a;
@@ -463,4 +466,8 @@
   }
   .TelNumLink{
     text-decoration: none;
+  }
+  .navbar_li{
+    justify-content: space-around;
+    margin-left: 0;
   }

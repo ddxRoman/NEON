@@ -148,12 +148,13 @@ h3{
 
 .social{
 /* padding-top: 50px; */
-padding-left: 160px;
+padding-left: 290px;
 padding-right: 200px;
 justify-self: center;
 align-self: center;
 animation: socialOn 1.5s  ease-out;
 }
+
 @keyframes socialOn{
     10%{
         opacity: 0.1;
@@ -374,4 +375,11 @@ ul li a {
 
 ul li:nth-child(2n) a {
   color: #000;
+}
+.header-nav__menu{
+    margin-left: 0;
+}
+video{
+    width: 50%;
+    height: 300px;
 }

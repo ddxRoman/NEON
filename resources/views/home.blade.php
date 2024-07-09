@@ -25,7 +25,7 @@
 @vite(['resources/css/main.css','resources/css/button.css','resources/js/app.js'])
 <body>
     <header>
-        <div class="container-fluid-fluid">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-4">
                 <h1><a href="top"></a> NEON DON</h1>
@@ -233,8 +233,13 @@
             <h3>
             <a href="#about"    class="heder-3_Link"            name="about">Кто мы</a> 
             </h3>
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nulla dolor itaque nam rerum error corrupti ipsam sed sint nesciunt quibusdam fuga excepturi minus, aliquam, dolorem perspiciatis. Adipisci mollitia aspernatur consequatur reprehenderit animi sequi ducimus dolorum nulla molestias corrupti deserunt facere praesentium et earum soluta sapiente, ullam eius error. Rerum ex tempora aliquam. Ex similique minima fuga qui? Minima quis provident eum animi vel, suscipit neque perspiciatis. Corrupti accusamus blanditiis quaerat facilis repudiandae porro vitae, neque rerum eum, corporis adipisci atque, dolorem quas delectus. Harum eum natus qui neque error doloremque aspernatur consequatur nesciunt, id tenetur alias nam at voluptatem consectetur minima similique. Quasi explicabo voluptate eum harum veniam tempora dignissimos, ex maxime similique possimus, voluptates corporis, nihil dolorum fugit. Autem ut vero laboriosam odit, deleniti nemo obcaecati similique qui soluta facilis temporibus veniam voluptates consequatur doloremque non explicabo alias repudiandae iure molestias quas modi, sapiente vitae laborum. Vero molestias incidunt inventore illo nesciunt, animi sapiente in adipisci laboriosam amet magni delectus, ea libero atque quas voluptate repellendus sed? Vitae fuga culpa adipisci aliquid ad, libero nulla at, accusamus quis magni maiores repellat, aperiam quisquam numquam ducimus accusantium non iusto quod dignissimos consequatur cum itaque! Debitis culpa sit esse dolore quibusdam hic velit, quisquam quos dignissimos possimus vel doloremque ex maiores eveniet atque, consequuntur distinctio voluptas tenetur sequi asperiores recusandae laboriosam minus odio! Fugit, sunt eveniet quidem unde ipsa sequi doloribus possimus officia enim eum officiis blanditiis quas rerum iusto, nihil nemo exercitationem expedita maxime reiciendis impedit dolorem perferendis. Veritatis enim molestiae sapiente amet officia.
+          
+            
+
+            <!-- <iframe width="562" height="800" src="{{asset('videos/intro.MP4')}}" frameborder="0" autoplay="false" allowfullscreen></iframe> -->
+
+
+            
             </div>
             </div>
             </div>
@@ -269,12 +274,46 @@
             </div>
         </section>
     </main>
+
+
     <footer>
     <div class="container-fluid">
                 <div class="row">
+<div class="col-3">     
+                <div class="row">
 <div class="col-12">
-        inc copyrignt
-            </div>
+
+    <a href="">
+        <img src="{{asset('images/icon/vk.svg')}}" alt="">
+    </a><a href="">
+        <img src="{{asset('images/icon/instagram.svg')}}" alt="">
+    </a><a href="https://t.me/neondn">
+        <img src="{{asset('images/icon/telegram.svg')}}" alt="">
+    </a>
+</div>
+                </div>
+                    <div class="row">
+<div class="col-12">
+
+    
+    
+    
+    <a href="tel:+79495555555" class="TelNumLink_footer">
+        <img src="{{asset('images/icon/call.svg')}}" alt="">    
+        <span class="telnumber_footer">+7(949)-555-55-55</span>
+    </a>
+    <span>
+        
+        </div>
+                            </div>
+                            </div>
+
+
+<div class="col-6">   
+    блоки с менюшками, списки, договоры аферты и конфинденциальности и тд и тп, в самом низу
+    Тут копирайт и прочее
+   </div>
+<div class="col-3">   способовы оплаты   </div>
             </div>
             </div>
     </footer>
