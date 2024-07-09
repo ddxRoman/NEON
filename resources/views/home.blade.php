@@ -19,17 +19,17 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/button.css') }}">
+    <!-- <link rel="stylesheet" href="{{ asset('css/main.css') }}"> -->
+    <!-- <link rel="stylesheet" href="{{ asset('css/button.css') }}"> -->
 </head>
-
+@vite(['resources/css/main.css','resources/css/button.css','resources/js/app.js'])
 <body>
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid-fluid">
             <div class="row">
                 <div class="col-4">
                 <h1><a href="top"></a> NEON DON</h1>
-                <h1 class="blink"> NEON DON</h1>
+            <a class="logo_link" href="/">    <h1 class="blink">  NEON DON</h1></a>
                 </div>
                 <div class="col-6 social">
                 
@@ -44,7 +44,7 @@
                 <div class="col-2 telephone">
                 
 
-                <a href="tel:+79495555555">
+                <a href="tel:+79495555555" class="TelNumLink">
                     <img src="{{asset('images/icon/call.svg')}}" alt="">    
                     <span class="telnumber">   +7(949)-555-55-55</span>
                 </a>
@@ -56,8 +56,6 @@
        
     <div class="row">
         <div class="col-12">
-
-
         <a class="btn_totop" href="#top"><img src="{{asset('images/arrow-up.svg')}}"></a>
         <nav class="header-nav__menu col-lg-12 col-md-4 text-center">
             <ul class="navbar_li">
@@ -84,11 +82,13 @@
     </header>
     <main>
 
-        <!-- Карусель должна генерится цыклом из базы -->
+        <!-- Карусель должна генерится цыклом из базы 
+        Размер фоток для слайдера 1100 на 650
+        --> 
         <section class="section_examples">
-    <div class="container">
+    <div class="container-fluid">
     <div class="row">
-            <h3><a href="#example" name="example">Примеры работ</a>
+            <h3><a href="#example" class="heder-3_Link" name="example">Примеры работ</a>
             </h3>
             <div id="carouselExampleCaptions" class="carousel slide section_examples_carousel" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -136,24 +136,25 @@
 
         </section>
         <section class="section_price">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <h3>
-                        <a href="#price" name="price">Цены</a>
+                        <a href="#price" class="heder-3_Link" name="price">Цены</a>
                     </h3>
                     <div class="col-6">
-                        <ul>
-                            <li>Услуга.....................................2</li>
-                            <li>Услуга.....................................2</li>
-                            <li>Услуга.....................................2</li>
-                            <li>Услуга.....................................2</li>
-                            <li>Услуга.....................................2</li>
-                            <li>Услуга.....................................2</li>
-                            <li>Услуга.....................................2</li>
-                            <li>Услуга.....................................2</li>
-                            <li>Услуга.....................................2</li>
-                            <li>Услуга.....................................2</li>
-                        </ul>
+                    
+                        <a href="google.com"> 
+                    <table class="price">
+                        <tr>  <td>Услуга</td> <td class="ghost_order">заказать</td>   <td class="price_coast">  2</td>  </tr>
+                        <tr>  <td>Услуга</td> <td class="ghost_order">заказать</td>   <td class="price_coast">  2</td>  </tr>
+                        <tr>  <td>Услуга</td> <td class="ghost_order">заказать</td>   <td class="price_coast">  2</td>  </tr>
+                        <tr>  <td>Услуга</td> <td class="ghost_order">заказать</td>   <td class="price_coast">  2</td>  </tr>
+
+                        
+                        
+                    </table>
+                    </a> 
+
                     </div>
                     <div class="col-6">
                                                 <!-- Карусель должна генерится цыклом из базы -->
@@ -204,7 +205,7 @@
                                 <div class="carousel-item">
                                 <figure>
                                 <img class="aside_note_breeds_picture" width="100%" src="{{asset('images/examples/lash.png')}}">
-                                <figcaption class="example_price">Цена8</figcaption>
+                                <figcaption class="example_price">Цена 8</figcaption>
                             </figure>
                                 </div>
 
@@ -225,13 +226,12 @@
         </section>
 
         <section>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
 <div class="col-12">
 
             <h3>
-            <a href="#about"   
-             name="about">Кто мы</a> 
+            <a href="#about"    class="heder-3_Link"            name="about">Кто мы</a> 
             </h3>
             <br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nulla dolor itaque nam rerum error corrupti ipsam sed sint nesciunt quibusdam fuga excepturi minus, aliquam, dolorem perspiciatis. Adipisci mollitia aspernatur consequatur reprehenderit animi sequi ducimus dolorum nulla molestias corrupti deserunt facere praesentium et earum soluta sapiente, ullam eius error. Rerum ex tempora aliquam. Ex similique minima fuga qui? Minima quis provident eum animi vel, suscipit neque perspiciatis. Corrupti accusamus blanditiis quaerat facilis repudiandae porro vitae, neque rerum eum, corporis adipisci atque, dolorem quas delectus. Harum eum natus qui neque error doloremque aspernatur consequatur nesciunt, id tenetur alias nam at voluptatem consectetur minima similique. Quasi explicabo voluptate eum harum veniam tempora dignissimos, ex maxime similique possimus, voluptates corporis, nihil dolorum fugit. Autem ut vero laboriosam odit, deleniti nemo obcaecati similique qui soluta facilis temporibus veniam voluptates consequatur doloremque non explicabo alias repudiandae iure molestias quas modi, sapiente vitae laborum. Vero molestias incidunt inventore illo nesciunt, animi sapiente in adipisci laboriosam amet magni delectus, ea libero atque quas voluptate repellendus sed? Vitae fuga culpa adipisci aliquid ad, libero nulla at, accusamus quis magni maiores repellat, aperiam quisquam numquam ducimus accusantium non iusto quod dignissimos consequatur cum itaque! Debitis culpa sit esse dolore quibusdam hic velit, quisquam quos dignissimos possimus vel doloremque ex maiores eveniet atque, consequuntur distinctio voluptas tenetur sequi asperiores recusandae laboriosam minus odio! Fugit, sunt eveniet quidem unde ipsa sequi doloribus possimus officia enim eum officiis blanditiis quas rerum iusto, nihil nemo exercitationem expedita maxime reiciendis impedit dolorem perferendis. Veritatis enim molestiae sapiente amet officia.
@@ -241,10 +241,10 @@
         </section>
         <section>
 
-                        <div class="container">
+                        <div class="container-fluid">
                 <div class="row">
 <div class="col-12">
-            <h3> <a href="#production" name="production">Этапы изготовление вывесок</a></h3>
+            <h3> <a href="#production" class="heder-3_Link" name="production">Этапы изготовление вывесок</a></h3>
             <br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nulla dolor itaque nam rerum error corrupti ipsam sed sint nesciunt quibusdam fuga excepturi minus, aliquam, dolorem perspiciatis. Adipisci mollitia aspernatur consequatur reprehenderit animi sequi ducimus dolorum nulla molestias corrupti deserunt facere praesentium et earum soluta sapiente, ullam eius error. Rerum ex tempora aliquam. Ex similique minima fuga qui? Minima quis provident eum animi vel, suscipit neque perspiciatis. Corrupti accusamus blanditiis quaerat facilis repudiandae porro vitae, neque rerum eum, corporis adipisci atque, dolorem quas delectus. Harum eum natus qui neque error doloremque aspernatur consequatur nesciunt, id tenetur alias nam at voluptatem consectetur minima similique. Quasi explicabo voluptate eum harum veniam tempora dignissimos, ex maxime similique possimus, voluptates corporis, nihil dolorum fugit. Autem ut vero laboriosam odit, deleniti nemo obcaecati similique qui soluta facilis temporibus veniam voluptates consequatur doloremque non explicabo alias repudiandae iure molestias quas modi, sapiente vitae laborum. Vero molestias incidunt inventore illo nesciunt, animi sapiente in adipisci laboriosam amet magni delectus, ea libero atque quas voluptate repellendus sed? Vitae fuga culpa adipisci aliquid ad, libero nulla at, accusamus quis magni maiores repellat, aperiam quisquam numquam ducimus accusantium non iusto quod dignissimos consequatur cum itaque! Debitis culpa sit esse dolore quibusdam hic velit, quisquam quos dignissimos possimus vel doloremque ex maiores eveniet atque, consequuntur distinctio voluptas tenetur sequi asperiores recusandae laboriosam minus odio! Fugit, sunt eveniet quidem unde ipsa sequi doloribus possimus officia enim eum officiis blanditiis quas rerum iusto, nihil nemo exercitationem expedita maxime reiciendis impedit dolorem perferendis. Veritatis enim molestiae sapiente amet officia.
             </div>
@@ -252,10 +252,10 @@
             </div>
         </section>
         <section>
-        <div class="container">
+        <div class="container-fluid">
                 <div class="row">
 <div class="col-12">
-            <h3> <a href="#order" name="order">Оформить заказ</a></h3>
+            <h3> <a href="#order" class="heder-3_Link" name="order">Оформить заказ</a></h3>
             <br>
        
             <form method="post" action="">
@@ -270,7 +270,7 @@
         </section>
     </main>
     <footer>
-    <div class="container">
+    <div class="container-fluid">
                 <div class="row">
 <div class="col-12">
         inc copyrignt

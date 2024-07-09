@@ -1,50 +1,54 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NEON Донецк</title>
-    <META NAME="description" CONTENT="<?= $description = 'Description' ?>">
-    <meta name="Robots" content="index, follow">
-    <!-- На главной индекс фоллов, на остальныйх NO при пагинации. NOindex NOfollow на технических страницах, превнекст при каталоге с пагинацией (Договора, документы и тд, не важные для юзера)-->
-    <link rel="shortcut icon" href="img/icon/icon.ico" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="https://snipp.ru/cdn/bootstrap/3.4.1/bootstrap.min.css"> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"> </script> -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src="js/text_line_animation.js"></script>
-    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://snipp.ru/cdn/maskedinput/jquery.maskedinput.min.js"></script>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-    <!-- Styles -->
-    <!-- <link rel="stylesheet" href="{{ asset('css/main.css') }}"> -->
-    <!-- <link rel="stylesheet" href="{{ asset('css/button.css') }}"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+@vite(['resources/css/app.css','resources/js/app.js'])
 <style>
-.myAnimations {
-    animation-name: bounce, flash, pulse;
-    -webkit-animation-name: bounce, flash, pulse;
+    body,
+ul {
+  margin: 0;
+  padding: 0;
+}
 
+ul {
+  display: flex;
+}
 
+ul li {
+  list-style-type: none;
+  flex-basis: auto;
+  flex-grow: 1;
+  background: #000;
+  text-align: center;
+}
 
-    /*
-    you can set different proporties to different animations too:
-    1s to bounce
-    2s to flash
-    3s to pulse
-    */
+ul li:nth-child(2n) {
+  background: #ccc;
+}
 
-    animation-duration: 1s, 2s, 3s;
-    -webkit-animation-duration: 1s, 2s, 3s;
+ul li a {
+  padding: 20px 0;
+  text-decoration: none;
+  color: #ccc;
+  display: block;
+}
+
+ul li:nth-child(2n) a {
+  color: #000;
 }
 </style>
-
 <body>
-<div class="animated myAnimations">gfdgretreter</div>
-</body>
 
+<nav>
+  <ul>
+    <li><a href="">Продукция</a></li>
+    <li><a href="">Сообщества</a></li>
+    <li><a href="">Мероприятия и акции</a></li>
+    <li><a href="">Поддержка</a></li>
+  </ul>
+</nav>
+</body>
 </html>

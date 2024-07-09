@@ -1,0 +1,466 @@
+.heder-3_Link{
+    color: #00ffb3;
+    text-decoration: none;
+    
+  }
+  .heder-3_Link:hover{
+    text-shadow: 11px 11px 20px  #00ffb3;;
+    text-decoration: none;
+  }
+  
+  .heder-3_Link:visited{
+    outline-color:rgb(0, 255, 191);
+    color: #00ffb3;
+    text-decoration: none;
+  }
+  .heder-3_Link:active{
+  
+    text-shadow: 11px 11px 20px rgba(0, 255, 221, 0.51);
+    color: #00ffb36c;
+  
+    text-decoration: none;
+  }
+    
+  @keyframes activelink{
+    0%{
+      text-shadow: 11px 11px 20px rgba(255,0,0,0.51);
+    }
+    25%{
+        text-shadow: 11px 11px 20px rgba(182, 33, 33, 0.466);
+    }
+    50%{
+      text-shadow: 11px 11px 20px rgba(255,0,0,0.51);
+    }
+    75%{
+        text-shadow: 11px 11px 20px rgba(182, 33, 33, 0.918);
+    }
+  }
+  
+  .btn_totop{
+    position: fixed;
+    bottom: 15px;
+    z-index: 1;
+    right: 15px;
+    border-radius: 180px;
+    color: #ffffff;
+  }
+  
+  /* Кнопки */
+  .header__navBar__item li {
+    padding: auto;
+    margin: auto;
+    justify-content: center;
+  }
+  .header__navBar__item li {
+    justify-content: stretch;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: auto;
+  }
+  
+  .container_header{
+  
+  width: 100%;
+  }
+  
+  nav{
+    margin-left: 50px;
+    width: 50px;
+  line-height: normal;
+  margin-top: 75px;
+    justify-content: stretch;
+  }
+  .header__navBar__item li {
+    width: 19%;
+    justify-content: stretch;
+    display: inline-block;
+    text-transform: uppercase;
+  padding-right: 2%;
+  padding-left: 2%;
+    margin-top: auto;
+    align-items: center;
+  padding: auto;
+  
+    border: 1px solid #94e6ff;
+  
+  }
+  .header__navBar__item{
+    justify-content: center;
+  }:root {
+    --glow-color: hsl(186 100% 69%);
+  }
+  .glowing-btn {
+    width: 100%;
+    position: relative;
+    color: var(--glow-color);
+    cursor: pointer;
+    padding: 0.35em 1em;
+    border: 0.15em solid var(--glow-color);
+    border-radius: 0.45em;
+    background: none;
+    perspective: 2em;
+    font-family: "Raleway", sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 1em;
+  
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    animation: border-flicker 2s linear infinite;
+  }
+  
+  .glowing-txt {
+    float: center;
+    margin-right: -0.8em;
+    -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--glow-color);
+    -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--glow-color);
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+    animation: text-flicker 3s linear infinite;
+  }
+  
+  .faulty-letter {
+    opacity: 0.5;
+    animation: faulty-flicker 2s linear infinite;
+  }
+  
+  .glowing-btn::before {
+  
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(1em);
+    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    background: var(--glow-color);
+    pointer-events: none;
+  }
+  
+  .glowing-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 2em 0.2em var(--glow-color);
+    transition: opacity 100ms linear;
+  }
+  
+  .glowing-btn:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    animation: none;
+  }
+  
+  .glowing-btn:hover .glowing-txt {
+    animation: none;
+  }
+  
+  .glowing-btn:hover .faulty-letter {
+    animation: none;
+    text-shadow: none;
+    opacity: 1;
+  }
+  
+  .glowing-btn:hover:before {
+    filter: blur(1.5em);
+    opacity: 1;
+  }
+  
+  .glowing-btn:hover:after {
+    opacity: 1;
+  }
+  
+  @keyframes faulty-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    2% {
+      opacity: 0.1;
+    }
+    4% {
+      opacity: 0.5;
+    }
+    19% {
+      opacity: 0.5;
+    }
+    21% {
+      opacity: 0.1;
+    }
+    23% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0.5;
+    }
+    83% {
+      opacity: 0.4;
+    }
+  
+    87% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes text-flicker {
+    0% {
+      opacity: 0.1;
+    }
+  
+    2% {
+      opacity: 1;
+    }
+  
+    8% {
+      opacity: 0.1;
+    }
+  
+    9% {
+      opacity: 1;
+    }
+  
+    12% {
+      opacity: 0.1;
+    }
+    20% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0.3;
+    }
+    30% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.7;
+    }
+    72% {
+      opacity: 0.2;
+    }
+  
+    77% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0.9;
+    }
+  }
+  
+  @keyframes border-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    2% {
+      opacity: 1;
+    }
+    4% {
+      opacity: 0.1;
+    }
+  
+    8% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .glowing-btn{
+      font-size: 1em;
+    }
+  }
+  
+  .logo_link{
+    
+  }
+
+  dl, ol, ul {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+  
+  .btn{ 
+    min-width: 210px;
+  
+    text-transform: uppercase;
+    color: #2e4b8a;
+    font-size: 18pt;
+    font-weight: 900;
+    line-height: 50px;
+    border: 2px solid #354385;
+    border-radius: 5px;
+    animation: neon 1.5s ease infinite;
+    margin: 0 35px;
+    opacity: 0.8;
+  }
+  .btn:hover{ 
+    color: #1897ff;
+    font-size: 18pt;
+    font-weight: 900;
+    line-height: 50px;
+    border: 2px solid #00d9ff;
+    animation: neonhover 0.2s ease ;
+    box-shadow: 0px 0px 20px 5px rgba(0, 145, 255, 0.822);
+    text-shadow: 0px 0px 11px rgba(0,47,255,0.73);
+  }
+  
+  @keyframes neon{
+    0%{
+      border-color: #002fff3d;
+    }
+    15%{
+      border-color: #002fffd3;
+    }
+    25%{
+      border-color: #002fff50;
+    }
+    40%{
+      border-color: #1a39c0c5;
+    }
+    60%{
+      border-color: #002fff71;
+    }
+    80%{
+        border-color: #2c3b7e8a;
+    }
+    
+  }
+  
+  @keyframes topbtn {
+    0%{
+      box-shadow: -4px -4px 69px 17px rgba(68, 158, 227, 0.2);
+    }
+    50%{
+      box-shadow: -4px -4px 69px 17px rgba(68, 158, 227, 0.5);
+    }
+    80%{
+      box-shadow: -4px -4px 69px 17px rgba(68, 158, 227, 0.2);
+    }
+        
+  }
+  
+  @keyframes neonhover{
+    0%{
+        border-color: #1032dbd3;
+    }
+    40%{
+        border-color: #002fff3d;
+    }
+    75%{
+        border-color: #002fff71;
+        
+    }
+    
+    
+  
+  }
+  .btn_totop{
+    position: fixed;
+    bottom: 15px;
+    z-index: 1;
+    right: 15px;
+    animation: topbtn 2.5s ease-in-out infinite;
+  }
+  .btn_totop:hover{
+    position: fixed;
+    bottom: 15px;
+    z-index: 1;
+    right: 15px;
+  }
+  .btn-one{
+  
+    animation: neon1 4.5s ease infinite;
+  }
+  .btn-four{
+  
+    animation: neon2 2s ease infinite;
+  }
+  .btn-three{
+  
+    animation: neon3 4.5s ease infinite;
+  }
+  
+  
+  @keyframes neon1{
+    0%{
+      border-color: #002fff3d;
+    }
+    15%{
+      border-color: #002fff71;
+    }
+    25%{
+      border-color: #002fffd3;
+    }
+    40%{
+      border-color: #002fff71;
+    }
+    60%{
+      border-color: #2c3b7e8a;
+    }
+    80%{
+      border-color: #2b3c88c5;
+    }
+    
+  }
+  @keyframes neon2{
+    0%{
+      border-color: #002fff71;
+    }
+    15%{
+      border-color: #002fff3d;
+    }
+    25%{
+      border-color: #002fff71;
+    }
+    40%{
+      border-color: #2b3c88c5;
+    }
+    60%{
+      border-color: #2c3b7e8a;
+    }
+    80%{
+      border-color: #002fffd3;
+    }
+    
+  }
+  @keyframes neon3{
+    0%{
+      border-color: #002fff3d;
+    }
+    15%{
+      border-color: #002fffd3;
+    }
+    25%{
+      border-color: #002fff71;
+    }
+    40%{
+      border-color: #2b3c88c5;
+    }
+    60%{
+      border-color: #2c3b7e8a;
+    }
+    80%{
+      border-color: #002fff71;
+    }
+    
+  }
+  .TelNumLink{
+    text-decoration: none;
+  }
