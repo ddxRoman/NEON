@@ -63,13 +63,6 @@ a:active{
 width: 100%;
 }
 
-nav{
-  margin-left: 50px;
-  width: 50px;
-line-height: normal;
-margin-top: 75px;
-  justify-content: stretch;
-}
 .header__navBar__item li {
   width: 19%;
   justify-content: stretch;

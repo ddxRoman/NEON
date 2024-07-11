@@ -1,19 +1,23 @@
 html{
     max-width: 100%;
 }
-body{
-    background-color: black;
-    margin: 0;
-        padding: 0;
-        justify-content: center;
-        align-items: center;
-        font-size: 16px;
-        background: rgb(0, 0, 0);
-        box-shadow: 0 -200px 100px -120px rgb(0, 11, 46) inset;
-        color: #ffffff;
+.all_body_for_bg{
+    background: rgba(0, 0, 0, 0.836);
 }
-
-  
+body{
+    background-image: url("../../public/images/background/bg.jpg");
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    
+    /* box-shadow: 0 -200px 100px -120px rgb(0, 11, 46) inset; */
+    color: #ffffff;
+}
+.container, .container-fluid{
+background: rgba(0, 0, 0, 0.836);
+}
 section{
 min-height: 500px;
 padding: 0% 0%;
@@ -148,8 +152,8 @@ h3{
 
 .social{
 /* padding-top: 50px; */
-padding-left: 290px;
-padding-right: 200px;
+padding-left:120px;
+/* padding-right: 200px; */
 justify-self: center;
 align-self: center;
 animation: socialOn 1.5s  ease-out;
@@ -242,7 +246,7 @@ footer{
 
 .carousel-inner img{
     height: 650px;
-    width: 120%;
+    width: 100%;
     
 }
 .buy_btn{
@@ -269,8 +273,9 @@ height: 300px;
 .order_form_input{
     margin-top: 20px;
     height: 35px;
-    width: 55%;
+    width: 25%;
 }
+
 
 table, td{
                                                                                     /* Цвет обводки таблицы */  
@@ -362,10 +367,6 @@ ul li {
    text-align: center;
 }
 
-ul li:nth-child(2n) {
-  background: #ccc;
-}
-
 ul li a {
   padding: 20px 0; 
   text-decoration: none;
@@ -376,10 +377,34 @@ ul li a {
 ul li:nth-child(2n) a {
   color: #000;
 }
-.header-nav__menu{
-    margin-left: 0;
-}
+
 video{
     width: 50%;
     height: 300px;
+}
+.carousel {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.carousel img{
+
+    object-fit: cover;
+}
+.callback_order{
+    color: #000;
+    margin-bottom: 5%;
+}
+.TelLink_footer{
+    padding-top: 5%;
+}
+.TelNumLink_footer{
+    font-size: 18pt;
+}
+.social-footer{
+    margin-left: 10%;
+}
+header .container-fluid{
+    padding-left: 150px;
+    padding-right: 150px;
 }

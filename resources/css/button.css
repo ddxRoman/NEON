@@ -2,23 +2,23 @@ a{
   text-decoration: none;
   }
 .heder-3_Link{
-    color: #00ffb3;
+    color: #0077ff8e;
     text-decoration: none;
     
   }
   .heder-3_Link:hover{
-    text-shadow: 11px 11px 20px  #00ffb3;;
+    text-shadow: 0px 1px 50px  #0084ff;;
     text-decoration: none;
   }
   
   .heder-3_Link:visited{
-    outline-color:rgb(0, 255, 191);
-    color: #00ffb3;
+    outline-color:rgb(38, 0, 255);
+    color: #0084ff;
     text-decoration: none;
   }
   .heder-3_Link:active{
   
-    text-shadow: 11px 11px 20px rgba(0, 255, 221, 0.51);
+    text-shadow: 11px 11px 20px rgba(0, 60, 255, 0.51);
     color: #00ffb36c;
   
     text-decoration: none;
@@ -61,22 +61,10 @@ a{
     margin-top: auto;
   }
   
-  .container_header{
-  
-  width: 100%;
-  }
-  
-  nav{
-    margin-left: 50px;
-    width: 50px;
-  line-height: normal;
-  margin-top: 75px;
-    justify-content: stretch;
-  }
-  .header__navBar__item li {
+    .header__navBar__item li {
     width: 19%;
-    justify-content: stretch;
-    display: inline-block;
+    /* justify-content: stretch; */
+    /* display: inline-block; */
     text-transform: uppercase;
   padding-right: 2%;
   padding-left: 2%;
@@ -290,9 +278,7 @@ a{
     }
   }
   
-  .logo_link{
-    
-  }
+
 
   dl, ol, ul {
     margin-top: 2rem;
@@ -300,8 +286,7 @@ a{
   }
   
   .btn{ 
-    min-width: 350px;
-  
+    min-width: 13%;
     text-transform: uppercase;
     color: #2e4b8a;
     font-size: 18pt;
@@ -467,7 +452,15 @@ a{
   .TelNumLink{
     text-decoration: none;
   }
-  .navbar_li{
-    justify-content: space-around;
-    margin-left: 0;
+  .line_neon-hr{
+    color: rgb(255, 251, 0);
+    width: 100%;
+    box-shadow: 5px 2px 55px 10px #ffff00;
+    margin-bottom: 5%;
   }
+  hr:not([size]) {
+    height: 5px;
+}
+.carousel-control-next-icon-big, .carousel-control-prev-icon-big{
+  box-shadow: 0px -0px 15px 15px #00000070;
+}

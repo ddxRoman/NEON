@@ -14,3 +14,5 @@ const app = createApp({
 
 
 app.mount('#app')
+
+$('.mask-phone').mask('+7 (999) 999-99-99');
