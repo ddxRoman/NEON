@@ -1,12 +1,13 @@
 html{
     max-width: 100%;
+    padding-top: 100px;
 }
 .all_body_for_bg{
     background: rgba(0, 0, 0, 0.836);
 }
 body{
     background-image: url("../../public/images/background/bg.jpg");
-    margin: 0;
+    margin-top: -10px;
     padding: 0;
     justify-content: center;
     align-items: center;
@@ -15,8 +16,17 @@ body{
     /* box-shadow: 0 -200px 100px -120px rgb(0, 11, 46) inset; */
     color: #ffffff;
 }
+
 .container, .container-fluid{
 background: rgba(0, 0, 0, 0.836);
+}
+.container-fluid{
+height: 100px;
+}
+footer .container-fluid{
+height: 250px;
+background: rgba(17, 15, 0, 0.836);
+padding-top: 5%;
 }
 section{
 min-height: 500px;
@@ -27,24 +37,24 @@ padding: 0% 0%;
         color: rgb(255, 255, 0);
     margin-top: 35px;
     margin-left: 25px;
-    font-size: 64px;
+    font-size: 32px;
     animation: logo 1.7s ease-in-out infinite;
     animation-delay: 1000ms;
     margin-bottom: 75px;
 letter-spacing: 20%;
-  transform: rotate(-15deg);
+  transform: rotate(-8deg);
   z-index: 10;
 }
      .blink{
     color: rgb(255, 255, 0);
-    margin-top: -150px;
+    margin-top: -110px;
     margin-left: 25px;
-    font-size: 64px;
+    font-size: 32px;
     animation: logo1 2s ease-in-out;
     z-index: 1;
     margin-bottom: 75px;
 letter-spacing: 20%;
-  transform: rotate(-15deg);
+  transform: rotate(-8deg);
 }
 
 @keyframes logo1{
@@ -114,8 +124,8 @@ opacity: 0.1;
 h3{
     text-align: center;
     font-size: 36pt;
-    margin-bottom: 6rem;
-    margin-top: 8rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .example_price{
@@ -140,7 +150,12 @@ h3{
      }
 
      header{
-        min-height: 250px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        height: 100px;
+        z-index: 100001;
+        background: #000;
      }
 
      /* Кнопки */
@@ -151,12 +166,14 @@ h3{
         }
 
 .social{
-/* padding-top: 50px; */
-padding-left:120px;
-/* padding-right: 200px; */
-justify-self: center;
-align-self: center;
+    text-align: right;
+padding-top:1.75%;
+/* align-self: center; */
 animation: socialOn 1.5s  ease-out;
+}
+
+.header-nav__menu{
+    align-self: center;
 }
 
 @keyframes socialOn{
@@ -238,10 +255,6 @@ text-shadow: 20px 10px 109px rgba(4, 255, 0, 0.2);
         opacity: 1;
 
     }
-}
-
-footer{
-    height: 250px;
 }
 
 .carousel-inner img{
@@ -404,7 +417,20 @@ video{
 .social-footer{
     margin-left: 10%;
 }
-header .container-fluid{
-    padding-left: 150px;
-    padding-right: 150px;
+.section_hook_p{
+    padding-bottom: 4%;
+}
+.sectiono_hook{
+    padding-top: 2%;
+    height: 700px;
+}
+.sectiono_hook_block{
+    /* box-shadow: 0px 0px 85px 5px #ff00ea; */
+    box-shadow: 0px 0px 85px 5px #9dfff7;
+    border-radius: 1.5%;
+}
+.sectiono_hook_block_video-block{
+    text-align: right;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }

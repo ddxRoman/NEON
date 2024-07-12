@@ -141,17 +141,9 @@ h3{
 
 
      .row {
-         --bs-gutter-x: -20rem;
+         /* --bs-gutter-x: -20rem; */
         }
 
-.social{
-/* padding-top: 50px; */
-padding-left: 160px;
-padding-right: 200px;
-justify-self: center;
-align-self: center;
-animation: socialOn 1.5s  ease-out;
-}
 @keyframes socialOn{
     10%{
         opacity: 0.1;

@@ -41,9 +41,9 @@ a{
   
   .btn_totop{
     position: fixed;
-    bottom: 15px;
+    bottom: 25px;
     z-index: 1;
-    right: 15px;
+    right: 25px;
     border-radius: 180px;
     color: #ffffff;
   }
@@ -81,7 +81,9 @@ a{
     --glow-color: hsl(186 100% 69%);
   }
   .glowing-btn {
-    width: 100%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    width: 80%;
     position: relative;
     color: var(--glow-color);
     cursor: pointer;
@@ -129,7 +131,7 @@ a{
     left: 0;
     right: 0;
     opacity: 0.7;
-    filter: blur(1em);
+    filter: blur(0.5em);
     transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
     background: var(--glow-color);
     pointer-events: none;
@@ -286,7 +288,7 @@ a{
   }
   
   .btn{ 
-    min-width: 13%;
+    min-width: 180px;
     text-transform: uppercase;
     color: #2e4b8a;
     font-size: 18pt;
@@ -295,7 +297,7 @@ a{
     border: 2px solid #354385;
     border-radius: 5px;
     animation: neon 1.5s ease infinite;
-    margin: 0 35px;
+    margin-left: 25px;
     opacity: 0.8;
   }
   .btn:hover{ 
