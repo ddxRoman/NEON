@@ -3,8 +3,8 @@ a{
   }
 .heder-3_Link{
     color: #0077ff8e;
-    text-decoration: none;
-    
+    text-decoration: none;  
+    padding-top: 8%;
   }
   .heder-3_Link:hover{
     text-shadow: 0px 1px 50px  #0084ff;;
@@ -17,10 +17,8 @@ a{
     text-decoration: none;
   }
   .heder-3_Link:active{
-  
     text-shadow: 11px 11px 20px rgba(0, 60, 255, 0.51);
     color: #00ffb36c;
-  
     text-decoration: none;
   }
     
@@ -63,17 +61,13 @@ a{
   
     .header__navBar__item li {
     width: 19%;
-    /* justify-content: stretch; */
-    /* display: inline-block; */
     text-transform: uppercase;
   padding-right: 2%;
   padding-left: 2%;
     margin-top: auto;
     align-items: center;
   padding: auto;
-  
     border: 1px solid #94e6ff;
-  
   }
   .header__navBar__item{
     justify-content: center;
@@ -96,7 +90,6 @@ a{
     font-size: 2em;
     font-weight: 900;
     letter-spacing: 1em;
-  
     -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
       0px 0px 0.5em 0px var(--glow-color);
     -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
@@ -123,7 +116,6 @@ a{
   }
   
   .glowing-btn::before {
-  
     content: "";
     position: absolute;
     top: 0;
@@ -201,7 +193,6 @@ a{
     83% {
       opacity: 0.4;
     }
-  
     87% {
       opacity: 1;
     }
@@ -281,7 +272,6 @@ a{
   }
   
 
-
   dl, ol, ul {
     margin-top: 2rem;
     margin-bottom: 5rem;
@@ -358,8 +348,6 @@ a{
         
     }
     
-    
-  
   }
   .btn_totop{
     position: fixed;
@@ -387,7 +375,6 @@ a{
     animation: neon3 4.5s ease infinite;
   }
   
-  
   @keyframes neon1{
     0%{
       border-color: #002fff3d;
@@ -407,7 +394,6 @@ a{
     80%{
       border-color: #2b3c88c5;
     }
-    
   }
   @keyframes neon2{
     0%{
@@ -428,7 +414,6 @@ a{
     80%{
       border-color: #002fffd3;
     }
-    
   }
   @keyframes neon3{
     0%{
@@ -449,16 +434,9 @@ a{
     80%{
       border-color: #002fff71;
     }
-    
   }
   .TelNumLink{
     text-decoration: none;
-  }
-  .line_neon-hr{
-    color: rgb(255, 251, 0);
-    width: 100%;
-    box-shadow: 5px 2px 55px 10px #ffff00;
-    margin-bottom: 5%;
   }
   hr:not([size]) {
     height: 5px;

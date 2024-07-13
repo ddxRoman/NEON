@@ -226,7 +226,8 @@ text-shadow: 20px 10px 109px rgba(4, 255, 0, 0.2);
 }
 
 footer{
-    height: 250px;
+    height: 2500px;
+    background-color: black;
 }
 
 .carousel-inner img{

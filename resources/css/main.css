@@ -1,51 +1,52 @@
-html{
+html {
     max-width: 100%;
     padding-top: 100px;
 }
-.all_body_for_bg{
-    background: rgba(0, 0, 0, 0.836);
+
+.all_body_for_bg {
+    background: rgba(0, 0, 0, 0.801);
 }
-body{
+
+body {
     background-image: url("../../public/images/background/bg.jpg");
     margin-top: -10px;
     padding: 0;
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    
-    /* box-shadow: 0 -200px 100px -120px rgb(0, 11, 46) inset; */
     color: #ffffff;
 }
 
-.container, .container-fluid{
-background: rgba(0, 0, 0, 0.836);
+.container,
+.container-fluid {
+    background: rgba(0, 0, 0, 0.678);
 }
-.container-fluid{
-height: 100px;
+
+footer .container-fluid {
+    height: 250px;
+    padding-top: 5%;
 }
-footer .container-fluid{
-height: 250px;
-background: rgba(17, 15, 0, 0.836);
-padding-top: 5%;
+
+section {
+    min-height: 300px;
+    padding: 0% 0%;
 }
-section{
-min-height: 500px;
-padding: 0% 0%;
-}
-    h1{
-        opacity: 0;
-        color: rgb(255, 255, 0);
+
+h1 {
+    opacity: 0;
+    color: rgb(255, 255, 0);
     margin-top: 35px;
     margin-left: 25px;
     font-size: 32px;
     animation: logo 1.7s ease-in-out infinite;
     animation-delay: 1000ms;
     margin-bottom: 75px;
-letter-spacing: 20%;
-  transform: rotate(-8deg);
-  z-index: 10;
+    letter-spacing: 20%;
+    transform: rotate(-8deg);
+    z-index: 10;
 }
-     .blink{
+
+.blink {
     color: rgb(255, 255, 0);
     margin-top: -110px;
     margin-left: 25px;
@@ -53,82 +54,97 @@ letter-spacing: 20%;
     animation: logo1 2s ease-in-out;
     z-index: 1;
     margin-bottom: 75px;
-letter-spacing: 20%;
-  transform: rotate(-8deg);
+    letter-spacing: 20%;
+    transform: rotate(-8deg);
 }
 
-@keyframes logo1{
-    0%{
-opacity: 0.1;
-    }
-    10%{
-        opacity: 0.5;
-    }
-    20%{
-        opacity: 0.3;
-    }
-    30%{
-        opacity: 0.7;
-    }
-    40%{
+@keyframes logo1 {
+    0% {
         opacity: 0.1;
     }
-    50%{
-        opacity: 0.2;
-    }
-   60%{
-        opacity: 0.4;
-    }
-    70%{
-        opacity: 0.2;
-    }
-    80%{
+
+    10% {
         opacity: 0.5;
     }
-    90%{
+
+    20% {
+        opacity: 0.3;
+    }
+
+    30% {
         opacity: 0.7;
     }
-    100%{
+
+    40% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    60% {
+        opacity: 0.4;
+    }
+
+    70% {
+        opacity: 0.2;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+
+    90% {
+        opacity: 0.7;
+    }
+
+    100% {
         opacity: 1;
     }
 }
-@keyframes logo{
-    0%{
+
+@keyframes logo {
+    0% {
         opacity: 1;
         color: rgba(255, 255, 0, 0.87);
-        text-shadow: 3px 3px 10px rgba(255,255,0,0.61);
+        text-shadow: 3px 3px 10px rgba(255, 255, 0, 0.61);
     }
-    25%{
+
+    25% {
         opacity: 0.9;
         color: rgba(255, 255, 0, 0.747);
-        text-shadow: 3px 3px 10px rgba(255,255,0,0.61);
+        text-shadow: 3px 3px 10px rgba(255, 255, 0, 0.61);
     }
-    50%{
+
+    50% {
         opacity: 1;
         color: rgba(255, 255, 0, 1);
-        text-shadow: 3px 3px 10px rgba(255,255,0,0.61);
+        text-shadow: 3px 3px 10px rgba(255, 255, 0, 0.61);
     }
-    75%{
+
+    75% {
         opacity: 0.9;
         color: rgba(255, 255, 0, 0.856);
-        text-shadow: 3px 3px 10px rgba(255,255,0,0.61);
+        text-shadow: 3px 3px 10px rgba(255, 255, 0, 0.61);
     }
-    100%{
+
+    100% {
         opacity: 1;
         color: rgba(255, 255, 0, 0.856);
-        text-shadow: 3px 3px 10px rgba(255,255,0,0.61);
+        text-shadow: 3px 3px 10px rgba(255, 255, 0, 0.61);
     }
 }
 
 
-h3{
+h3 {
     text-align: center;
     font-size: 36pt;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
-.example_price{
+.example_price {
     color: yellow;
     text-align: center;
     font-size: 16pt;
@@ -139,298 +155,321 @@ h3{
     padding: auto;
     margin: auto;
     font-size: 2em;
- -webkit-text-fill-color: white;
+    -webkit-text-fill-color: white;
     display: inline-block;
-
     width: 100%;
-      }
-
-     ul{
-        list-style-type: none;
-     }
-
-     header{
-        position: fixed;
-        width: 100%;
-        top: 0;
-        height: 100px;
-        z-index: 100001;
-        background: #000;
-     }
-
-     /* Кнопки */
-
-
-     .row {
-         --bs-gutter-x: -20rem;
-        }
-
-.social{
-    text-align: right;
-padding-top:1.75%;
-/* align-self: center; */
-animation: socialOn 1.5s  ease-out;
 }
 
-.header-nav__menu{
+ul {
+    list-style-type: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100px;
+    z-index: 100001;
+    background: #000;
+}
+
+.row {
+    --bs-gutter-x: -20rem;
+}
+
+.header_row {
+    height: 100px;
+}
+
+.social {
+    text-align: right;
+    padding-top: 1.75%;
+    animation: socialOn 1.5s ease-out;
+}
+
+.header-nav__menu {
     align-self: center;
 }
 
-@keyframes socialOn{
-    10%{
+@keyframes socialOn {
+    10% {
         opacity: 0.1;
     }
-    20%{
+
+    20% {
         opacity: 0.3;
     }
-    30%{
+
+    30% {
         opacity: 0.2;
     }
-    40%{
+
+    40% {
         opacity: 0.6;
     }
-    50%{
+
+    50% {
         opacity: 0.3;
     }
-    60%{
+
+    60% {
         opacity: 0.8;
     }
-    70%{
+
+    70% {
         opacity: 0.2;
     }
-    80%{
+
+    80% {
         opacity: 0.7;
     }
-    90%{
+
+    90% {
         opacity: 1;
 
     }
 }
 
-.section_price{
-    margin-top: 105px;
-}
-
-.telephone img{
+.telephone img {
     margin-top: -15px;
 }
 
-.telephone{
+.telephone {
     padding-top: 50px;
     animation: telOn 1s ease-in-out;
 }
 
-.telnumber{
-color: #04ff00;
-font-size: 18pt;
-text-shadow: 20px 10px 109px rgba(4, 255, 0, 0.2);
+.telnumber {
+    color: #04ff00;
+    font-size: 18pt;
+    text-shadow: 20px 10px 109px rgba(4, 255, 0, 0.2);
 }
 
-@keyframes telOn{
-    10%{
+@keyframes telOn {
+    10% {
         opacity: 0.1;
     }
-    20%{
+
+    20% {
         opacity: 0.3;
     }
-    30%{
+
+    30% {
         opacity: 0.2;
     }
-    40%{
+
+    40% {
         opacity: 0.6;
     }
-    50%{
+
+    50% {
         opacity: 0.3;
     }
-    60%{
+
+    60% {
         opacity: 0.8;
     }
-    70%{
+
+    70% {
         opacity: 0.2;
     }
-    80%{
+
+    80% {
         opacity: 0.7;
     }
-    90%{
+
+    90% {
         opacity: 1;
 
     }
 }
 
-.carousel-inner img{
+.carousel-inner img {
     height: 650px;
     width: 100%;
-    
 }
-.buy_btn{
+
+.buy_btn {
     position: absolute;
     z-index: 1;
     right: 50%;
     color: #ff0000;
     border: 2px #002fff;
-    
-}
-.aside_note_breeds_picture{
-height: 300px;
 }
 
-.carousel-indicators{
+.aside_note_breeds_picture {
+    height: 300px;
+}
+
+.carousel-indicators {
     margin-left: 20%;
 }
 
-.section_examples_carousel{
+.section_examples_carousel {
     box-shadow: -10px -9px 100px 30px rgba(119, 0, 255, 0.1);
-    margin-bottom: 45px;
     margin-bottom: 25px;
 }
-.order_form_input{
+
+
+.order_form_input {
     margin-top: 20px;
     height: 35px;
     width: 25%;
 }
 
-
-table, td{
-                                                                                    /* Цвет обводки таблицы */  
-/* border: 2px solid #ffffff;      */
-}
-table{
+table {
     width: 95%;
     font-size: 18pt;
     font-weight: 600;
     color: #F3EDDB;
 }
-.price td{
+
+.price td {
     height: 55px;
     padding-left: 2%;
 }
-.price_coast{
+
+.price_coast {
     text-align: end;
     padding-right: 2%;
 }
-tr{
 
-}
-
-tr:hover{
-
-    /* background-color: #ff0000; */
-
+tr:hover {
     -webkit-box-shadow: 2px 0px 33px 9px #00e1ff;
     -moz-box-shadow: 2px 0px 33px 9px #ff0000;
     box-shadow: 2px 0px 33px 9px #00f7ff inset;
     animation: blinkprice 0.5s ease-in-out;
     color: #15ff00;
 }
-@keyframes blinkprice{
-    25%{
+
+@keyframes blinkprice {
+    25% {
         -webkit-box-shadow: 2px 0px 33px 9px #C276B6;
         -moz-box-shadow: 2px 0px 33px 9px #C276B6;
         box-shadow: 2px 0px 33px 9px #C276B6 inset;
         color: #ffe600;
     }
-    50%{
+
+    50% {
         -webkit-box-shadow: 2px 0px 33px 9px #C276B6;
         -moz-box-shadow: 2px 0px 33px 9px #C276B6;
         box-shadow: 2px 0px 33px 9px #C276B6 inset;
         color: #ffe600af;
     }
-    75%{
+
+    75% {
         -webkit-box-shadow: 2px 0px 33px 9px #C276B6;
         -moz-box-shadow: 2px 0px 33px 9px #C276B6;
         box-shadow: 2px 0px 33px 9px #C276B6 inset;
         color: #15ff00;
     }
 }
-.ghost_order{
+
+.ghost_order {
     opacity: 0.1;
     color: white;
 }
 
-.ghost_order:hover{
-
+.ghost_order:hover {
     animation: orderbright 1s ease-in-out infinite;
 }
-@keyframes orderbright{
-    25%{
+
+@keyframes orderbright {
+    25% {
         opacity: 0.5;
     }
-    50%{
+
+    50% {
         opacity: 0.7;
     }
-    75%{
+
+    75% {
         opacity: 0.9;
     }
-} 
+}
+
 body,
 ul {
-  margin: 0; 
-   padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
-  display: flex;
+    display: flex;
 }
 
 ul li {
-  list-style-type: none; 
-  flex-basis: auto;
-  flex-grow: 1;
-  background: #000;
-   text-align: center;
+    list-style-type: none;
+    flex-basis: auto;
+    flex-grow: 1;
+    text-align: center;
 }
 
 ul li a {
-  padding: 20px 0; 
-  text-decoration: none;
-  color: #ccc;
-   display: block;
+    padding: 20px 0;
+    text-decoration: none;
+    color: #ccc;
+    display: block;
 }
 
 ul li:nth-child(2n) a {
-  color: #000;
+    color: #000;
 }
 
-video{
+video {
     width: 50%;
     height: 300px;
 }
-.carousel {
-    width: 90%;
-    margin-right: 5%;
-    margin-left: 5%;
-}
-.carousel img{
 
-    object-fit: cover;
+.carousel {
+    width: 100%;
+    /* margin-right: 5%;
+    margin-left: 5%; */
 }
-.callback_order{
+
+.carousel img {
+    object-fit: cover;
+    height: 500px;
+}
+
+.callback_order {
     color: #000;
     margin-bottom: 5%;
 }
-.TelLink_footer{
+
+.TelLink_footer {
     padding-top: 5%;
 }
-.TelNumLink_footer{
+
+.TelNumLink_footer {
     font-size: 18pt;
 }
-.social-footer{
+
+.social-footer {
     margin-left: 10%;
 }
-.section_hook_p{
+
+.section_hook_p {
     padding-bottom: 4%;
 }
-.sectiono_hook{
+
+.section_hook {
     padding-top: 2%;
+    padding-bottom: 2%;
     height: 700px;
 }
-.sectiono_hook_block{
-    /* box-shadow: 0px 0px 85px 5px #ff00ea; */
+
+.section_hook_block {
     box-shadow: 0px 0px 85px 5px #9dfff7;
     border-radius: 1.5%;
 }
-.sectiono_hook_block_video-block{
+
+.section_hook_block_video-block {
     text-align: right;
     padding-top: 2%;
     padding-bottom: 2%;
+}
+
+footer {
+    background-color: #000000;
 }
