@@ -310,11 +310,18 @@ header {
     margin-bottom: 25px;
 }
 
-
 .order_form_input {
     margin-top: 20px;
-    height: 35px;
-    width: 25%;
+    height: 40px;
+    width: 50%;
+}
+.order_form_input, .order_form_textarea{
+    border-color: rgb(255, 230, 0);
+
+}
+.order_form_input:focus, .order_form_textarea:focus{
+    border-color: rgb(255, 230, 0);
+    box-shadow: 0px 0px 20px 1px rgb(255, 238, 0);
 }
 
 table {
@@ -323,17 +330,14 @@ table {
     font-weight: 600;
     color: #F3EDDB;
 }
-
 .price td {
     height: 55px;
     padding-left: 2%;
 }
-
 .price_coast {
     text-align: end;
     padding-right: 2%;
 }
-
 tr:hover {
     -webkit-box-shadow: 2px 0px 33px 9px #00e1ff;
     -moz-box-shadow: 2px 0px 33px 9px #ff0000;
@@ -420,16 +424,30 @@ video {
     width: 50%;
     height: 300px;
 }
+.section_callback{
+    text-align: center;
+}
 
 .carousel {
-    width: 100%;
-    /* margin-right: 5%;
-    margin-left: 5%; */
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.carousel-price{
+width: 90%;
+margin-left: 10%;
 }
 
 .carousel img {
     object-fit: cover;
-    height: 500px;
+    /* height: 480px; */
+}
+.order_form_textarea{
+    margin-top: 5%;
+    height: 100px;
+    width: 50%;
+
 }
 
 .callback_order {
@@ -453,6 +471,63 @@ video {
     padding-bottom: 4%;
 }
 
+.neon_callback{
+    
+    width: 100%;
+    height: 80%;
+    margin-top: 5%;
+    border-radius: 25%;
+    border: 3px solid #fff;    
+    /* box-shadow: 0px 0px 855px 5px #fff inset; */
+    animation: blockfooter 0.001s ease-in-out infinite;
+}
+@keyframes blockfooter{
+    10%{
+            box-shadow: 10px 0px 855px 1px #ffffff6b inset;
+    }
+    20%{
+            box-shadow: 50px 0px 855px 2px #cf050531 inset;
+    }
+    30%{
+            box-shadow: 50px 0px 855px 3px #000 inset;
+    }
+    40%{
+            box-shadow: 0px 50px 855px 4px #000 ;
+    }
+    50%{
+            box-shadow: 0px 50px 185px 5px #22b33a inset;
+    }
+    60%{
+            box-shadow: 0px 50px 855px 6px #fff ;
+    }
+    70%{
+            box-shadow: 0px 50px 855px 7px #000 ;
+    }
+    80%{
+            box-shadow: 0px 50px 855px 8px #000 inset;
+    }
+    90%{
+            box-shadow: 0px 50px 285px 9px #00ffd5 ;
+    }
+    100%{
+            box-shadow: 0px 0px 855px 10px #fff inset;
+    }
+
+}
+.circle{
+    margin-top: 100px;
+margin-left: 70px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #000000;
+}
+
+
+.neon_callback-block{
+padding: 5%;
+}
+
 .section_hook {
     padding-top: 2%;
     padding-bottom: 2%;
@@ -472,4 +547,15 @@ video {
 
 footer {
     background-color: #000000;
+}
+.h2_reviews{
+    text-align: center;
+    justify-content: center;
+    font-size: 48pt;
+    font-weight: 700;
+    color: yellow;
+}
+.reviews .carousel img{
+    width: 100%;
+    height: 800px;
 }
