@@ -19,6 +19,16 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://md-aqil.github.io/images/swiper.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"> </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="js/text_line_animation.js"></script>
+    <script src="https://snipp.ru/cdn/maskedinput/jquery.maskedinput.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+
 </head>
 @vite(['resources/css/main.css','resources/css/button.css','resources/js/app.js'])
 
@@ -95,7 +105,9 @@
                         <div class="col-6 section_hook_block_video-block">
                             <iframe width="262" height="450" src="{{asset('videos/intro.MP4')}}" frameborder="0" autoplay="false" allowfullscreen></iframe>
                         </div>
-                        <button class='glowing-btn'><span class='glowing-txt'>ЗА<span class='faulty-letter'>КА</span>ЗАТЬ</span></button>
+                        <a href="#openModal">
+                            <button data-bs-toggle="modal" data-bs-target="#ModalCallback" class='glowing-btn'><span class='glowing-txt'>ЗА<span class='faulty-letter'>КА</span>ЗАТЬ</span></button>
+                                            </a>
 
                     </div>
                 </div>
@@ -274,31 +286,98 @@
                         <h3><a href="#reviews" class="heder-3_Link" name="reviews">Отзывы о нас</a>
                         </h3>
 
-<div class="col-6">
-    <h2 class="h2_reviews">Отзывы о нас</h2>
-</div>
-<div class="col-6">
+<section class="spacer">
+			
+				<div class="testimonial-section">
+					<div class="testi-user-img">
+					<div class="swiper-container gallery-thumbs">
+						  <div class="swiper-wrapper">
+								  <div class="swiper-slide">
+										<img class="u3" src="https://md-aqil.github.io/images/2091127763_1_1_1.jpg" alt="">
+									</div>
+						  <div class="swiper-slide">
+							  <img class="u1" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
+						  </div>
+						  <div class="swiper-slide">
+						  <img class="u2" src="https://md-aqil.github.io/images/attractive-beautiful-beauty-1986684.jpg" alt="">
+						  </div>
+					  
+						  <div class="swiper-slide">
+						  <img class="u4" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
+						  </div>
+						  
+						  </div>
+					  </div>
+					</div>
+					<div class="user-saying">
+						  <div class="swiper-container testimonial">
+								  <!-- Additional required wrapper -->
+								  <div class="swiper-wrapper ">
+									  <!-- Slides -->
+									  <div class="swiper-slide">
+										  <div class="quote">
+												  <img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+											  <p>
+                                                Ебанама ахуенная штука сделал. Красавелла нахуй
 
-
-
-
-
-
-
-
-                        <!--   <div class="col-3">
-                            <img class="reviews_img" src="{{asset('images/feedback/pattern.png')}}" alt="">
-                        </div>
-                        <div class="col-3">
-                            <img class="reviews_img" src="{{asset('images/feedback/pattern.png')}}" alt="">
-                        </div>
-                        <div class="col-3">
-                            <img class="reviews_img" src="{{asset('images/feedback/pattern.png')}}" alt="">
-                        </div>
-                        <div class="col-3">
-                            <img class="reviews_img" src="{{asset('images/feedback/pattern.png')}}" alt=""> -->
-
-                </div>
+											  </p>
+											  <div class="name">Наратаотвечун</div>
+											  <div class="designation">Кафе-марафе</div>
+											  
+										  </div>
+									  </div>
+									  <div class="swiper-slide">
+										  <div class="quote">
+												<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+											
+											  <p>
+													  “This is best and biggest unified platform
+											  for instant online admission. We can easily
+											  take admission for any course in any institute..“
+											  </p>
+											  <div class="name">-Ramkishor Verma-</div>
+											  <div class="designation">University Student</div>
+											  
+										  </div>
+									  </div>
+									  <div class="swiper-slide">
+										  <div class="quote">
+												<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+												  
+											  <p>
+													  “This is best and biggest unified platform
+											  for instant online admission. We can easily
+											  take admission for any course in any institute..“
+											  </p>
+											  <div class="name">-Ramkishor Verma-</div>
+											  <div class="designation">University Student</div>
+											  
+										  </div>
+									  </div>
+									  <div class="swiper-slide">
+											  <div class="quote">
+													<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+												 
+												  <p>
+														  “This is best and biggest unified platform
+												  for instant online admission. We can easily
+												  take admission for any course in any institute..“
+												  </p>
+												  <div class="name">-Ramkishor Verma-</div>
+												  <div class="designation">University Student</div>
+												  
+											  </div>
+										  </div>
+									  
+								  </div>
+								  <!-- If we need pagination -->
+								  <div class="swiper-pagination swiper-pagination-white"></div>
+							  
+							  </div>
+					</div>
+				</div>
+			</section>
+	<script src="https://md-aqil.github.io/images/swiper.min.js"></script>
     </div>
     </section>
     <section>
@@ -377,6 +456,31 @@
             </div>
         </div>
     </footer>
-</body>
+    
+    
 
+
+<!-- Модальное окно -->
+<div class="modal fade" id="ModalCallback" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="modal-title">Мы вам перезвоним</h3>
+			</div>
+			<div class="modal-body">
+				Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Залетают повстречался, напоивший семь заманивший образ, курсивных правилами страна власти безопасную города но на берегу предупредила большого вопрос. Скатился она ему возвращайся единственное. Они, встретил там. Запятой, однажды? Запятых взгляд если подпоясал о всеми снова рыбного своего текст коварных? Инициал, толку переулка. Сих большого напоивший текста. Но до приставка большого букв. Текстов толку первую раз заглавных его которой страна встретил курсивных не семантика гор, переписывается маленькая строчка ему щеке своих, жизни города запятой она! Несколько, своего! Вопрос использовало решила парадигматическая первую знаках подзаголовок океана эта подпоясал маленькая своего, рыбного переписывается повстречался.
+			
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+                                $('.mask-phone').mask('+7 (999) 999-99-99');
+                            </script>
+
+
+
+
+</body>
 </html>
