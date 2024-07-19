@@ -87,12 +87,6 @@
             <section class="section_hook">
                 <div class="container section_hook_block">
                     <div class="row">
-
-                        <!-- <h3>Цепляющий Хук</h3>
-                            <h3>Сюда же можно справа сделать видео</h3>
-                            <p class="section_hook_p">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. На берегу имени заголовок знаках букв своего, не первую все коварных бросил жизни они пустился повстречался предложения большого курсивных рыбными, свое вершину дороге продолжил! Взгляд там лучше что, свое по всей над которой это приставка, запятой своего маленькая страна речью, текст диких парадигматическая журчит единственное живет наш заголовок предложения злых? Снова строчка всеми все! Подпоясал по всей, переписали коварных диких скатился океана правилами свое маленький, текста города языком последний ведущими реторический несколько прямо всеми живет рыбными пунктуация, текстов путь пор своего? Не которой города мир вершину взгляд. Живет бросил лучше текстов щеке букв.</p>
-                            -->
-
                         <div class="col-6">
                             <h3>Налетай подешевело</h3>
                             <p>
@@ -107,7 +101,7 @@
                         </div>
                         <a href="#openModal">
                             <button data-bs-toggle="modal" data-bs-target="#ModalCallback" class='glowing-btn'><span class='glowing-txt'>ЗА<span class='faulty-letter'>КА</span>ЗАТЬ</span></button>
-                                            </a>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -123,8 +117,6 @@
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -139,20 +131,6 @@
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Second slide label</h5>
                                         <p>Some representative placeholder content for the second slide.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{asset('images/examples/beer.png')}}" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Second slide label</h5>
-                                        <p>Some representative placeholder content for the second slide.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="{{asset('images/examples/Wow.jpg')}}" class="d-block w-100" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Third slide label</h5>
-                                        <p>Some representative placeholder content for the third slide.</p>
                                     </div>
                                 </div>
                             </div>
@@ -196,27 +174,6 @@
                                             </td>
                                         <td class="price_coast"> 2</td>
                                     </tr>
-                                    <tr>
-                                        <td>Услуга</td>
-                                        <td class="ghost_order"><a href="#openModal">
-                            <button data-bs-toggle="modal" data-bs-target="#ModalCallback">заказать</button>
-                                            </a></td>
-                                        <td class="price_coast"> 2</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Услуга</td>
-                                        <td class="ghost_order"><a href="#openModal">
-                            <button data-bs-toggle="modal" data-bs-target="#ModalCallback">заказать</button>
-                                            </a></td>
-                                        <td class="price_coast"> 2</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Услуга</td>
-                                        <td class="ghost_order"><a href="#openModal">
-                            <button data-bs-toggle="modal" data-bs-target="#ModalCallback">заказать</button>
-                                            </a></td>
-                                        <td class="price_coast"> 2</td>
-                                    </tr>
                                 </table>
 
                         </div>
@@ -230,49 +187,6 @@
                                             <figcaption class="example_price">Цена1</figcaption>
                                         </figure>
                                     </div>
-                                    <div class="carousel-item">
-                                        <figure>
-                                            <img class="aside_note_breeds_picture" width="100%" src="{{asset('images/examples/Nike.png')}}">
-                                            <figcaption class="example_price">Цена2</figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <figure>
-                                            <img class="aside_note_breeds_picture" width="100%" src="{{asset('images/examples/Wow.jpg')}}">
-                                            <figcaption class="example_price">Цена3</figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <figure>
-                                            <img class="aside_note_breeds_picture" width="100%" src="{{asset('images/examples/purple.jpg')}}">
-                                            <figcaption class="example_price">Цена4</figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <figure>
-                                            <img class="aside_note_breeds_picture" width="100%" src="{{asset('images/examples/beer.png')}}">
-                                            <figcaption class="example_price">Цена5</figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <figure>
-                                            <img class="aside_note_breeds_picture" width="100%" src="{{asset('images/examples/beer2.png')}}">
-                                            <figcaption class="example_price">Цена6</figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <figure>
-                                            <img class="aside_note_breeds_picture" width="100%" src="{{asset('images/examples/like.png')}}">
-                                            <figcaption class="example_price">Цена7</figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <figure>
-                                            <img class="aside_note_breeds_picture" width="100%" src="{{asset('images/examples/lash.png')}}">
-                                            <figcaption class="example_price">Цена 8</figcaption>
-                                        </figure>
-                                    </div>
-
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -303,18 +217,7 @@
 								  <div class="swiper-slide">
 										<img class="u3" src="https://md-aqil.github.io/images/2091127763_1_1_1.jpg" alt="">
 									</div>
-						  <div class="swiper-slide">
-							  <img class="u1" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
-						  </div>
-						  <div class="swiper-slide">
-						  <img class="u2" src="https://md-aqil.github.io/images/attractive-beautiful-beauty-1986684.jpg" alt="">
-						  </div>
-					  
-						  <div class="swiper-slide">
-						  <img class="u4" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
-						  </div>
-						  
-						  </div>
+                                </div>
 					  </div>
 					</div>
 					<div class="user-saying">
@@ -334,49 +237,6 @@
 											  
 										  </div>
 									  </div>
-									  <div class="swiper-slide">
-										  <div class="quote">
-												<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-											
-											  <p>
-													  “This is best and biggest unified platform
-											  for instant online admission. We can easily
-											  take admission for any course in any institute..“
-											  </p>
-											  <div class="name">-Ramkishor Verma-</div>
-											  <div class="designation">University Student</div>
-											  
-										  </div>
-									  </div>
-									  <div class="swiper-slide">
-										  <div class="quote">
-												<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-												  
-											  <p>
-													  “This is best and biggest unified platform
-											  for instant online admission. We can easily
-											  take admission for any course in any institute..“
-											  </p>
-											  <div class="name">-Ramkishor Verma-</div>
-											  <div class="designation">University Student</div>
-											  
-										  </div>
-									  </div>
-									  <div class="swiper-slide">
-											  <div class="quote">
-													<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
-												 
-												  <p>
-														  “This is best and biggest unified platform
-												  for instant online admission. We can easily
-												  take admission for any course in any institute..“
-												  </p>
-												  <div class="name">-Ramkishor Verma-</div>
-												  <div class="designation">University Student</div>
-												  
-											  </div>
-										  </div>
-									  
 								  </div>
 								  <!-- If we need pagination -->
 								  <div class="swiper-pagination swiper-pagination-white"></div>
@@ -424,7 +284,7 @@
     </main>
 
     </div>
-    <!-- <hr class="line_neon-hr"> -->
+
     <footer>
         <div class="container-fluid ">
             <div class="row">
@@ -464,9 +324,7 @@
             </div>
         </div>
     </footer>
-    
 
-т мм
 <!-- Модальное окно -->
 <div class="modal fade" id="ModalCallback" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
