@@ -7,15 +7,15 @@ use App\Models\Contact;
 
 class ContactController extends Controller
 {
-    // public function submit(ContactRequest $req) {
+    public function submit(Request $req) {
         
-    //     $contact = new Contact();
-    //     $contact->dates=$req->input('dates');
-    //     $contact->type=$req->input('type');
+        $contact = new Contact();
+        $contact->dates=$req->input('dates');
+        $contact->type=$req->input('type');
 
-    //     $contact->save();
+        $contact->save();
 
-    //     return redirect()->route('home');
-    // }
+        return redirect()->route('home');
+    }
 
 }

@@ -19,7 +19,7 @@ Route::get('admin', function () {
     return view('admin');
 });
 
-// Route::get('/', 'App\Http\Controllers\ArticleController@fistArticle' )->name('home.blade'); 
-Route::get('/', 'App\Http\Controllers\PriceController@Price' )->name('home.blade'); 
-// Route::get('admin_edit_hook/article', 'App\Http\Controllers\ArticleController@allArticle' )->name('article-list'); 
-Route::post('admin_edit_hook/submit', 'App\Http\Controllers\ArticleController@submit' )->name('edit'); 
+// Route::get('/', 'App\Http\Controllers\PriceController@Price' )->name('home.blade'); 
+Route::get('/', 'App\Http\Controllers\HomePageController@get' )->name('home.blade'); 
+Route::post('admin_edit/submit', 'App\Http\Controllers\ArticleController@submit' )->name('edit'); 
+Route::post('admin_edit/price_add', 'App\Http\Controllers\PriceController@price_add' )->name('price'); 

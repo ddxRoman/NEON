@@ -1,3 +1,4 @@
+@props(['data'])
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -66,14 +67,15 @@
                         </nav>
                     </div>
                     <div class="col-3 social">
-                        <a href="tel:+79495555555" class="TelNumLink">
-                            <span class="telnumber"> +7(949)-555-55-55</span>
+
+                        <a href="tel:{{$data['contacts']['telephone']}}" class="TelNumLink">
+                            <span class="telnumber"> {{$data['contacts']['telephone']}}</span>
                         </a>
-                        <a href="">
+                        <a href="{{$data['contacts']['vkontakte']}}" target="_blank">
                             <img src="{{asset('images/icon/vk.svg')}}" alt="">
-                        </a><a href="https://www.instagram.com/neondonetsk/">
+                        </a><a href="{{$data['contacts']['instagram']}}" target="_blank">
                             <img src="{{asset('images/icon/instagram.svg')}}" alt="">
-                        </a><a href="https://t.me/neondn">
+                        </a><a href="{{$data['contacts']['telegram']}}" target="_blank">
                             <img src="{{asset('images/icon/telegram.svg')}}" alt="">
                         </a>
                         <br>
@@ -84,10 +86,16 @@
             </div>
         </header>
         <main>
+
             <section class="section_hook">
                 <div class="container section_hook_block">
                     <div class="row">
                         <div class="col-6">
+
+<x-article-card :article="$data['articles'][0]">
+
+</x-article-card>
+
                         </div>
                         <div class="col-6 section_hook_block_video-block">
                             <iframe width="262" height="450" src="{{asset('videos/intro.MP4')}}" frameborder="0" autoplay="false" allowfullscreen></iframe>
@@ -148,7 +156,9 @@
                         <h3><a href="#competitors" class="heder-3_Link" name="competitors">Сравнение с конкурентами</a>
                         </h3>
 
-                        
+                        <x-article-card :article="$data['articles'][1]">
+
+</x-article-card>
 
 
                     </div>
@@ -163,7 +173,7 @@
 
                         <div class="col-6">
                             <table class="price">
-                                    @foreach($price as $position_price)
+                                    @foreach($data['prices'] as $position_price)
                                     <tr>
                                         <td>{{ $position_price->name_product}}</td>
                                         <td class="ghost_order">    <a href="#openModal">
@@ -253,8 +263,9 @@
                     <a href="#about" class="heder-3_Link" name="about">Кто мы</a>
                 </h3>
                 <div class="col-6">
-                    Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Реторический эта это, лучше повстречался путь продолжил на берегу. Своего власти жизни маленькая но! Собрал строчка единственное возвращайся родного пунктуация безорфографичный, бросил сих заманивший предложения домах. Пунктуация ведущими дорогу рот? Языкового возвращайся города текстов сих семь себя букв текстами, путь которой ведущими предупреждал маленькая но жаренные. Своего всемогущая необходимыми однажды агентство великий вопроса буквоград заголовок от всех свое продолжил рукопись взобравшись прямо оксмокс реторический свою дал безорфографичный, грустный подзаголовок на берегу алфавит одна живет что, грамматики первую? Заглавных выйти ему, своего ручеек проектах вершину рукописи букв. Предупредила путь свой вскоре его свое. Заманивший рукописи большого свое рекламных путь приставка они. Живет на берегу, имени прямо обеспечивает то дал свой грамматики все! Дал парадигматическая толку предложения запятых переулка его коварных буквоград заглавных маленькая! Однажды знаках вопрос лучше, переписали все ты вершину? Свое рукопись по всей рукописи большого, переулка снова там даль! Использовало, своего, вскоре свое ему собрал необходимыми вершину послушавшись реторический составитель, взгляд переписывается она точках океана последний? Запятых пояс свой скатился рот гор путь до толку все единственное семь океана собрал текст текстов оксмокс коварный взобравшись ему, грустный маленькая ты, правилами он щеке, напоивший эта.
-            </div>
+                <x-article-card :article="$data['articles'][2]">
+
+</x-article-card>     </div>
             </div>
         </div>
     </section>
@@ -293,20 +304,20 @@
                 <div class="col-5">
                     <div class="row">
                         <div class="col-12 social-footer">
-                            <a href="">
+                            <a href="{{$data['contacts']['vkontakte']}}">
                                 <img src="{{asset('images/icon/vk.svg')}}" alt="">
-                            </a><a href="https://www.instagram.com/neondonetsk/">
+                            </a><a href="{{$data['contacts']['instagram']}}">
                                 <img src="{{asset('images/icon/instagram.svg')}}" alt="">
-                            </a><a href="https://t.me/neondn">
+                            </a><a href="{{$data['contacts']['telegram']}}">
                                 <img src="{{asset('images/icon/telegram.svg')}}" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 TelLink_footer">
-                            <a href="tel:+79495555555" class="TelNumLink_footer">
+                            <a href="tel:{{$data['contacts']['telephone']}}" class="TelNumLink_footer">
                                 <img src="{{asset('images/icon/call.svg')}}" alt="">
-                                <span class="telnumber_footer">+7(949)-555-55-55</span>
+                                <span class="telnumber_footer">{{$data['contacts']['telephone']}}</span>
                             </a>
                             <span>
                         </div>

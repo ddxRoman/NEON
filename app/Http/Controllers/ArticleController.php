@@ -18,10 +18,10 @@ class ArticleController extends Controller
         return redirect('admin');
     }
     public function fistArticle(){
-    $article = new Article;
-    return view('home', ['header'=>$article->where('rank', '=', '0')->get()]);
+    $article = new Article();
+    // return view('home', ['header'=>$article->where('rank', '=', '0')->get()]);
+    // dd($article->all());
+    return view('home', ['data'=>$article->all()]);
+    
     }
     }
-
-    
-    

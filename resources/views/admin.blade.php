@@ -62,6 +62,7 @@
 </div>
 @endif
 <div class="admin_edit_block">
+    <h3>ХУК</h3>
 <form action="{{route('edit')}}" method="post">
     @csrf
     <input name="header" placeholder="h1" type="text"><br>
@@ -70,8 +71,21 @@
     <button type="submit">Сохрани</button>
 </form>
 
-    <!-- <iframe src="" name="admin_frame" frameborder="0"></iframe> -->
+<!-- <iframe src="" name="admin_frame" frameborder="0"></iframe> -->
+<h3>Прайс</h3>
+
+
+<form action="{{route('price')}}" method="post">
+    @csrf
+    <input type="text" placeholder="Название" name="name_neon">
+    <input type="number" placeholder="Сроки" name="time_neon">
+    <input type="number" placeholder="Цена" name="coast_neon">
+    <button type="submit">Сохрани</button>
+    
+</form>
+
 </div>
+
 
 </body>
 </html>

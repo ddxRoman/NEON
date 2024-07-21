@@ -760,6 +760,9 @@ margin-left: 20%;
     font-weight: 600;
     font-size: 18pt;
 }
+.admin_edit_block h3{
+color: black;
+}
 .admin_edit_block{
     padding-left: 2%;
     padding-top: 5%;
