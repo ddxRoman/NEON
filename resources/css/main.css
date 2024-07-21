@@ -727,3 +727,49 @@ text-align: center;
         margin: 1.75rem auto;
     }
 }
+.login_page_body{
+    width: 60%;
+margin-top: 10%;
+margin-left: 20%;
+    background-color: #000000da;
+    color: white;
+    border: 2px solid #00e1ff;
+}
+.login_form{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 35%;
+    width: 300px;
+    text-align: center;
+}
+.login_form input{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 3%;
+}
+.admin_nav{
+    margin-top: -100px;
+    height: 150px;
+    background-color: white;
+}
+.admin_nav a{
+    padding-top: 2%;
+    height: 100px;
+    width: 100%;
+    padding-left: 5%;
+    font-weight: 600;
+    font-size: 18pt;
+}
+.admin_edit_block{
+    padding-left: 2%;
+    padding-top: 5%;
+    margin-left: 25%;
+    width: 50%;
+    height: 700px;    
+    margin-top: 2.5%;
+    background: #fff;
+}
+form textarea{
+    height: 250px;
+    width: 90%;
+}
