@@ -170,7 +170,6 @@
                         <h3>
                             <a href="#price" class="heder-3_Link" name="price">Цены</a>
                         </h3>
-
                         <div class="col-6">
                             <table class="price">
                                     @foreach($data['prices'] as $position_price)
@@ -238,7 +237,6 @@
 												  <img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
 											  <p>
                                                 Ебанама ахуенная штука сделал. Красавелла нахуй
-
 											  </p>
 											  <div class="name">Наратаотвечун</div>
 											  <div class="designation">Кафе-марафе</div>
