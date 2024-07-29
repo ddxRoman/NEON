@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string("product");
             $table->string("cooments");
             $table->string("customer");
+            $table->foreignId('customer_id')->constrained();
             $table->timestamps();
         });
     }

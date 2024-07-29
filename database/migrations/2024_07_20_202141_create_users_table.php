@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string("passwords");
             $table->string("role");
             $table->string("email");
+            $table->string("email_verified_at");
+            $table->string("remember_token");
             $table->timestamps();
         });
     }

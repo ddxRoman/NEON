@@ -17,7 +17,10 @@ return new class extends Migration
             $table->string('body');
             $table->string('url_photo');
             $table->string('product');
+            $table->foreignId('order_id')->constrained()->onDelete('cascade');
+            $table->foreignId('customer_id')->constrained();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

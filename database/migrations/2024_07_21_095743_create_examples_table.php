@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string("url_photo");
             $table->bigInteger("coast");
             $table->bigInteger("production_time");
+            $table->foreignId('order_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
