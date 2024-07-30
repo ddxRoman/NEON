@@ -18,6 +18,7 @@ return new class extends Migration
             $table->bigInteger("coast");
             $table->bigInteger("production_time");
             $table->foreignId('order_id')->constrained()->onDelete('cascade');
+            $table->foreignId('price_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }

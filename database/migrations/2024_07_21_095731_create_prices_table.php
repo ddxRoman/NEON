@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string("name_product");
             $table->bigInteger("price");
             $table->bigInteger("production_time");
-            $table->foreignId('example_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
