@@ -14,9 +14,10 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->string("product");
-            $table->string("cooments");
+            $table->string("coments");
             $table->string("customer");
-            $table->foreignId('customer_id')->constrained();
+            $table->bigInteger("coast");
+            $table->foreignId('customer_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
