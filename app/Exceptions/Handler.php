@@ -3,6 +3,7 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+// use App\Exceptions\telegram;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -17,6 +18,17 @@ class Handler extends ExceptionHandler
         'password',
         'password_confirmation',
     ];
+
+    // public function report(Throwable $e){
+
+    //     $data=[
+    //         'description'=>$e->getMessage(),
+    //         'file'=> $e->getFile(),
+    //         'line'=>$e->getLine()
+    //     ];
+    //     $telegram = new telegram();
+    //     $telegram->sendMessage('2116281958','MessageTesticulus');
+    // }
 
     /**
      * Register the exception handling callbacks for the application.

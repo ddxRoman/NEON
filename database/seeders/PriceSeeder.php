@@ -12,6 +12,6 @@ class PriceSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\Price::factory(500)->create();
+        \App\Models\Price::factory(5)->create();
     }
 }

@@ -68,7 +68,7 @@
     <input name="header" placeholder="h1" type="text"><br>
     <textarea name="body" placeholder="text" type="text"> </textarea><br>
     <input name="rank" placeholder="rank" type="number"><br>
-    <button type="submit">Сохрани</button>
+    <button type="submit">Сохранить</button>
 </form>
 
 <!-- <iframe src="" name="admin_frame" frameborder="0"></iframe> -->
