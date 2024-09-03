@@ -1,3 +1,4 @@
+
 html {
     max-width: 100%;
     padding-top: 100px;
@@ -230,14 +231,14 @@ header {
     }
 }
 
-.telephone img {
+/* .telephone img {
     margin-top: -15px;
 }
 
 .telephone {
     padding-top: 50px;
     animation: telOn 1s ease-in-out;
-}
+} */
 
 .telnumber {
     color: #04ff00;
@@ -775,4 +776,87 @@ color: black;
 form textarea{
     height: 250px;
     width: 90%;
+}
+iframe{
+    width: 250px;
+    height: 400px;
+}
+
+
+
+
+@media screen (min-width: 1000px),
+(max-width:1260px) {
+  
+    .header-nav__menu{
+        display: none;
+    }
+    .social img{
+        width: 64px;
+    }
+    .social{
+        margin-left: 25%;
+    }
+    .navbar_block{
+        display: none;
+    }
+}
+@media screen (min-width: 991px),
+(max-width:1366px) {
+  
+h1{
+    font-size:28px;
+}
+}
+
+
+@media screen (min-width: 1132px), (max-width: 1320px)
+{
+      h1{
+        margin-top: 15%;
+        font-size: 24px;
+      }
+}
+@media screen (min-width: 1060px), (max-width: 1132px)
+{
+      h1{
+        margin-top: 15%;
+        font-size: 20px;
+      }
+}
+@media screen (min-width: 10px),
+(max-width:991px) {
+  
+h1{
+    margin-top: 10%;
+     transform: rotate(0);
+}
+.blink{
+    display: none;
+    transform: rotate(0);
+}
+}
+
+@media screen (min-width: 1200px),
+(max-width:1640px) {
+    h1{
+        font-size:18px;
+    }
+    .header_row{
+        margin-left: 20px;
+
+    }
+    .section_hook_block_video-block{
+        display: none;
+    }
+    .row{
+        display: block;
+    }
+}
+
+@media screen (min-width: 120px),
+(max-width:768px) {
+.row{
+    display: flex;
+}
 }

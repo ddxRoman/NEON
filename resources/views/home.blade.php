@@ -39,13 +39,13 @@
             <div class="container-fluid">
                 <div class="row header_row">
 
-                    <div class="col-2">
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5 col-5">
                         <h1><a href="top"></a> NEON DON</h1>
                         <a class="logo_link" href="/">
                             <h1 class="blink"> NEON DON</h1>
                         </a>
                     </div>
-                    <div class="col-7">
+                    <div class="col-xl-7 col-lg-7 col-md-0 col-sm-1 col-1 navbar_block">
                         <nav class="header-nav__menu col-lg-12 col-md-4 text-center">
                             <ul class="navbar_li">
                                 <a href="#example">
@@ -66,11 +66,9 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-3 social">
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 col-6 social">
+                    <div class="social_messenger">
 
-                        <a href="tel:{{$data['contacts']['telephone']}}" class="TelNumLink">
-                            <span class="telnumber"> {{$data['contacts']['telephone']}}</span>
-                        </a>
                         <a href="{{$data['contacts']['vkontakte']}}" target="_blank">
                             <img src="{{asset('images/icon/vk.svg')}}" alt="">
                         </a><a href="{{$data['contacts']['instagram']}}" target="_blank">
@@ -78,9 +76,13 @@
                         </a><a href="{{$data['contacts']['telegram']}}" target="_blank">
                             <img src="{{asset('images/icon/telegram.svg')}}" alt="">
                         </a>
-                        <br>
+                    </div>
+                        
                         <span>
                             <a class="btn_totop" href="#top"><img src="{{asset('images/arrow-up.svg')}}"></a>
+                            <a href="tel:{{$data['contacts']['telephone']}}" class="btn_TelNumLink">
+                            <img class="img_btn_TelNumLink" src="{{asset('images/icon/call.svg')}}" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -90,15 +92,14 @@
             <section class="section_hook">
                 <div class="container section_hook_block">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-lg-6 col-12">
 
 <x-article-card :article="$data['articles'][0]">
 
 </x-article-card>
-
                         </div>
-                        <div class="col-6 section_hook_block_video-block">
-                            <iframe width="262" height="450" src="{{asset('videos/intro.MP4')}}" frameborder="0" autoplay="false" allowfullscreen></iframe>
+                        <div class="col-lg-6 col-0 section_hook_block_video-block">
+                            <iframe src="{{asset('videos/intro.MP4')}}" frameborder="0" autoplay="false" allowfullscreen></iframe>
                         </div>
                         <a href="#openModal">
                             <button data-bs-toggle="modal" data-bs-target="#ModalCallback" class='glowing-btn'><span class='glowing-txt'>ЗА<span class='faulty-letter'>КА</span>ЗАТЬ</span></button>
