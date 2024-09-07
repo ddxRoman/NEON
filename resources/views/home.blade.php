@@ -39,7 +39,7 @@
             <div class="container-fluid">
                 <div class="row header_row">
 
-                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5 col-5">
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-5 col-5">
                         <h1><a href="top"></a> NEON DON</h1>
                         <a class="logo_link" href="/">
                             <h1 class="blink"> NEON DON</h1>
@@ -66,7 +66,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 col-6 social">
+                    <div class="col-xl-3 col-lg-8 col-md-8 col-sm-6 col-6 social">
                     <div class="social_messenger">
 
                         <a href="{{$data['contacts']['vkontakte']}}" target="_blank">
@@ -92,7 +92,7 @@
             <section class="section_hook">
                 <div class="container section_hook_block">
                     <div class="row">
-                        <div class="col-lg-6 col-12">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 
 <x-article-card :article="$data['articles'][0]">
 
@@ -171,7 +171,7 @@
                         <h3>
                             <a href="#price" class="heder-3_Link" name="price">Цены</a>
                         </h3>
-                        <div class="col-6">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 price_block_list">
                             <table class="price">
                                     @foreach($data['prices'] as $position_price)
                                     <tr>
@@ -185,8 +185,8 @@
                                     @endforeach
                                 </table>
                         </div>
-                        <div class="col-6 ">
-                            <!-- Карусель должна генерится цыклом из базы -->
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-0 carousel_price_example">
+                            <!-- Карусель должна генерится цbклом из базы -->
                             <div id="carouselExampleFade" class="carousel-price carousel slide carousel-fade" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
@@ -296,11 +296,11 @@
     <footer>
         <div class="container-fluid ">
             <div class="row">
-                <div class="col-4">
+                <div class="col-xl-4 col-lg-3 col-md-12 col-sm-12 col-xs-4 col-4">
                     Вся представленная на сайте информация, касающаяся товаров и обслуживания, носит информационный
                     характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ.
                 </div>
-                <div class="col-5">
+                <div class="col-xl-5 col-lg-6 col-md-6 col-sm-6 col-xs-4 col-6">
                     <div class="row">
                         <div class="col-12 social-footer">
                             <a href="{{$data['contacts']['vkontakte']}}">
@@ -322,7 +322,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-4 col-3">
                     <ul class="payment">
                         <li><img src="{{asset('images/logopay/mastercard.svg')}}" alt=""></li>
                         <li><img src="{{asset('images/logopay/mir.svg')}}" alt=""></li>

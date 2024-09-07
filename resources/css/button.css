@@ -538,11 +538,8 @@ td button{
   .btn_TelNumLink{
         top: 15px;
       }
-      .social_messenger{
-        display: none;
-      }
       h1{
-        font-size: 28pt;
+        font-size: 20pt;
       }
 }
 @media screen (min-width: 132px), (max-width: 1640px)
@@ -552,5 +549,22 @@ td button{
   }
   header .container-fluid{
     max-height: 100px;
+  }
+}
+@media screen (min-width: 768px), (max-width: 991px){
+.glowing-btn{
+  font-size: 1.5em;
+  }
+}
+@media screen (min-width: 504px), (max-width: 768px){
+.glowing-btn{
+  font-size: 1.2em;
+  letter-spacing: 0.8em;
+  }
+}
+@media screen (min-width: 132px), (max-width: 504px){
+.glowing-btn{
+  font-size: 1em;
+  letter-spacing: 0.1em;
   }
 }
