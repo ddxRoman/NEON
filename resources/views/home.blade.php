@@ -34,9 +34,9 @@
 @vite(['resources/css/main.css','resources/css/modal.css','resources/css/button.css','resources/js/app.js'])
 <body>
     <div class="modal_block ">
-        <div class="container_map cookies">
+        <div class="container_map maps">
     <i class="fas fa-times close"></i>
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac86f43d5e2f18d19677bdf9125c9a6e930b87de104b08ed9390c10086fc5609a&amp;width=90%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>    
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac86f43d5e2f18d19677bdf9125c9a6e930b87de104b08ed9390c10086fc5609a&amp;width=90%&amp;height=130%&amp;lang=ru_RU&amp;scroll=true"></script>    
         </div>
 
         </div>
@@ -317,7 +317,7 @@
 
                             
 
-        <a href="#maps" class="btn-open" id="cookies">{{$data['contacts']['adress']}}
+        <a href="#maps" class="btn-open" id="maps">{{$data['contacts']['adress']}}
                         </a>
                         </div>
                     </div>

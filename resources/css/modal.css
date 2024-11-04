@@ -64,7 +64,8 @@ height: 500px;
 }
 
 .maps{
-    margin: 2%;
-    background-color: #00e1ff65;
+    margin: 5%;
+    margin-top: 1%;
+    /* background-color: #00e1ff65; */
     padding: 1%;
 }
