@@ -717,7 +717,7 @@ text-align: center;
     text-align: center;
 }
 .modal-footer {
-    align-items: center;
+    justify-content: flex-start;
 }
 .textarea_modal{
     margin-bottom: 5%;
@@ -777,7 +777,7 @@ form textarea{
     height: 250px;
     width: 90%;
 }
-iframe{
+.video_block{
     width: 250px;
     height: 400px;
 }
@@ -809,6 +809,7 @@ iframe{
 h1{
     font-size:28px;
 }
+
 }
 
 
@@ -950,3 +951,6 @@ width: 24px;
 width: 20px;
     }
 }
+
+
+

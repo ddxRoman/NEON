@@ -4,7 +4,21 @@ import { createApp } from "vue/dist/vue.esm-bundler";
 
 import TestComp from "./TestComp.vue"
 
-
+$(".btn-open").click(function(){
+    let id = $(this).attr("id");
+    let show = $("."+id).css("display");
+    if(show == "none"){
+        $("."+id).toggleClass("active");
+        $(".wrapper").toggleClass("active");
+    }else{
+        $("."+id).toggleClass("active");
+        $(".wrapper").removeClass("active");
+    }
+})
+$(".close").click(function(){
+    $(".container").removeClass("active");
+    $(".wrapper").removeClass("active");
+})
 
 const app = createApp({
     components:{
@@ -62,4 +76,6 @@ var galleryTop = new Swiper('.swiper-container.testimonial', {
 		swiper: galleryThumbs
 	  }
   });
-  
+
+
+

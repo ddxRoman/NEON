@@ -12,6 +12,4 @@ public function sendMessage($chat_id, $msg){
 ]);
 }
 }
-echo "TYT".$name."<br>".$msg."<br".$phone;
-
 ?>
