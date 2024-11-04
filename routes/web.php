@@ -6,7 +6,6 @@ use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\Facades\Route;
 
 
-
 Route::get('/', function () {
     return view('home');
 });
@@ -22,7 +21,7 @@ Route::get('/', function () {
 Route::get('tgbot', function () {
     \Illuminate\Support\Facades\Http::post('https://api.telegram.org/bot6048362058:AAFv50Fltmm_0Ufa-GYzAga-poK1-niyxVo/sendMessage',
     ['chat_id'=>2116281958,
-    'text'=>'Test <b>Neon</b>',
+    'text'=>'Тестовое сообщение <b>ЖИРНЫМ</b>',
     'parse_mode'=>'html'
     ]);
 });

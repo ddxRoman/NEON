@@ -68,7 +68,6 @@
                     </div>
                     <div class="col-xl-3 col-lg-8 col-md-8 col-sm-6 col-6 social">
                     <div class="social_messenger">
-
                         <a href="{{$data['contacts']['vkontakte']}}" target="_blank">
                             <img src="{{asset('images/icon/vk.svg')}}" alt="">
                         </a><a href="{{$data['contacts']['instagram']}}" target="_blank">
@@ -277,11 +276,11 @@
                     <h3> <a href="#order" class="heder-3_Link" name="order">Остались вопросы?</a></h3>
                     <h4>Остаьте свой вопрос в форме ниже и мы ответим вам в ближайщее время</h4>
                     <br>
-                    <form class="callback_order" method="post" action="">
-                        <input class="order_form_input" type="text" placeholder="Как к вам можно обращаться" type="text"><br>
+                    <form class="callback_order" method="post" action="TgBot.php">
+                        <input class="order_form_input" name="name" type="text" placeholder="Как к вам можно обращаться" type="text"><br>
                         <input required id="phone-number" name="phone" type="text" class="mask-phone order_form_input" placeholder="Номер телефона"><br>
-                        <input class="order_form_input" placeholder="Почта" type="text"><br>
-                        <textarea class="order_form_textarea" placeholder="Какая вывеска вам нужна, напишите свои пожелания" type="text"></textarea><br>
+                        <input class="order_form_input" name="email" placeholder="Почта" type="text"><br>
+                        <textarea class="order_form_textarea" name="msg" placeholder="Какая вывеска вам нужна, напишите свои пожелания" type="text"></textarea><br>
                         <button class="callback_form_btn">Отправить</button>
                     </form>
                 </div>
@@ -319,6 +318,9 @@
                                 <span class="telnumber_footer">{{$data['contacts']['telephone']}}</span>
                             </a>
                             <span>
+                            <a href="#openModal">
+                            <button data-bs-toggle="modal" data-bs-target="#ModalMap" ><span>{{$data['contacts']['adress']}}</span></button>
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -327,11 +329,16 @@
                         <li><img src="{{asset('images/logopay/mastercard.svg')}}" alt=""></li>
                         <li><img src="{{asset('images/logopay/mir.svg')}}" alt=""></li>
                         <li><img src="{{asset('images/logopay/visa.svg')}}" alt=""></li>
+
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+
+
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac86f43d5e2f18d19677bdf9125c9a6e930b87de104b08ed9390c10086fc5609a&amp;source=constructor" width="200" height="200" frameborder="0"></iframe>
+
 
 <!-- Модальное окно -->
 <div class="modal fade" id="ModalCallback" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -341,10 +348,10 @@
 				<h3 class="modal-title">Оформить заказ</h3> 
 			</div>
 			<div class="modal-body">
-<form action="" method="post">
-    <input class="input_modal order_form_input" type="text" placeholder="Имя">
-    <input class="input_modal mask-phone order_form_input" type="tel" placeholder="Номер телефона">
-    <textarea class="textarea_modal order_form_textarea" name="" id="" placeholder="Опишите какую вывеску вы хотите"></textarea>
+<form action="tgbot" method="get">
+    <input class="input_modal order_form_input" type="text" name="name" placeholder="Имя">
+    <input class="input_modal mask-phone order_form_input" name="tel_number" type="tel" placeholder="Номер телефона">
+    <textarea class="textarea_modal order_form_textarea" name="msg" id="" placeholder="Опишите какую вывеску вы хотите"></textarea>
 				<div class="modal-footer">
                     <button class="btn-modal">Заказать</button>
 </form>
@@ -352,6 +359,9 @@
 			</div>
 		</div>
 	</div>
+
+    
+    
 	<script>
                                 $('.mask-phone').mask('+7 (999) 999-99-99');
                             </script>
