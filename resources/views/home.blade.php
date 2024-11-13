@@ -33,14 +33,16 @@
 </head>
 @vite(['resources/css/main.css','resources/css/modal.css','resources/css/button.css','resources/js/app.js'])
 <body>
-    <div class="modal_block ">
+    <div class="modal_block">
         <div class="container_map maps">
-    <i class="fas fa-times close"></i>
+
+            <a href="#maps" class="btn-open" id="maps">  <button class="btn_maps_close">Закрыть</button>    </a>
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac86f43d5e2f18d19677bdf9125c9a6e930b87de104b08ed9390c10086fc5609a&amp;width=90%&amp;height=130%&amp;lang=ru_RU&amp;scroll=true"></script>    
+ 
         </div>
 
         </div>
-    <div class="all_body_for_bg">
+  <div class="all_body_for_bg">
         <header>
             <div class="container-fluid">
                 <div class="row header_row">
@@ -345,7 +347,7 @@
 @csrf
     <input class="input_modal order_form_input" type="text" name="name" placeholder="Имя">
     <input class="input_modal mask-phone order_form_input" name="tel_number" type="tel" placeholder="Номер телефона"><br>
-    <input class="input_modal mask-phone order_form_input" type="file" name="example">
+    <!-- <input class="input_modal mask-phone order_form_input" type="file" name="example"> -->
     <textarea class="textarea_modal order_form_textarea" name="msg" id="" placeholder="Опишите какую вывеску вы хотите"></textarea>
 				<div class="modal-footer">
                     <button class="btn-modal">Заказать</button>

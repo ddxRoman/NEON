@@ -36,10 +36,6 @@ a{
         text-shadow: 11px 11px 20px rgba(182, 33, 33, 0.918);
     }
   }
-
-
-  
-
   
   .btn_totop{
     position: fixed;
@@ -58,8 +54,9 @@ a{
   }
   .img_btn_TelNumLink{
     width: 64px;
-    
+    z-index: 9;
   animation: btn_TelNumLink 2.5s linear infinite;
+  position: relative;
   }
 
 

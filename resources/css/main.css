@@ -717,7 +717,7 @@ text-align: center;
     text-align: center;
 }
 .modal-footer {
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
 }
 .textarea_modal{
     margin-bottom: 5%;
